@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+
+body,
+html{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-transform: uppercase;
+    overflow-x:hidden ;
+    background-color: black;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.circle{
+    
+    width: 1.4vw;
+    height: 1.4vw;
+    border-radius: 50%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.234);
+    /* backdrop-filter: blur(1px); */
+    z-index: 999;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+
+}
+main{
+    width: 100%;
+    background-color: black;
+}
+
+
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+
+}
+
+.boundElem{
+    transform: translateY(100%);
+}
+
+.frame span{
+    text-align: right;
+    font-size: 9vw;
+    height: 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    padding: 0.4vw 3vw;
+    width: fit-content;
+   
+}
+
+.frame{
+    position: relative;
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 4;
+    
+   
+}
+
+
+
+
+
+
+.page1{
+    
+    
+    width: 100%;
+    height:93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   
+    position: relative;
+}
+
+nav{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+   background-color: transparent;
+   position: relative;
+   z-index: 9;
+
+}
+
+nav h4{
+    cursor: pointer;
+    
+}
+
+
+.p1body{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding: 1vw 3vw;
+}
+
+.p1body .heading{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+.heading h1{
+    cursor: pointer;
+    font-size: 9vw;
+    line-height: 1;
+    /* padding-left: 3vw; */
+    opacity: 0.65;
+   
+}
+
+.headingp2{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.headingbase{
+    width: 100%;
+    height: 20vh;
+    line-height: 1.3vw;
+   
+     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.p1bottom{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: 3vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2vw;
+    width: 30%;
+}
+.p1bottom>h4{
+    width: 25%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.p1bottom .arrows{
+    width: 25%;
+    height: 2vw;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+
+
+/* menu */
+.menu{
+    
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    padding: 4vw 3vw;
+    background-color: rgba(29, 28, 28, 0.448);
+    backdrop-filter: blur(30px);
+    transform: translateX(100%);
+    z-index: 99;
+    overflow: hidden;
+}
+.blackscreen{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transform: translateX(100%);
+    z-index: 99;
+}
+.menunav{
+    width: 95vw;
+    position: absolute;
+    top: 0;
+    padding-right: 3vw ;
+
+}
+
+.left-menu{
+    /* border: 1px solid red; */
+    height: 72vh;
+    width: fit-content;
+    border-right: 1px solid #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 0.5vw;
+
+}
+.left-menu h1 span{
+    cursor: pointer;
+    font-size: 7.7vw;
+    line-height: 1;
+    /* padding-left: 3vw; */
+    opacity: 0.5;
+    font-weight: 900;
+    
+}
+
+.left-menu h1 .boundElem{
+    /* width: 95%; */
+    border-bottom: 1px solid #888;
+    border-top: 1px solid #888;
+}
+.right-menu{
+    /* border: 1px solid red; */
+    height: 72vh;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.right-menu h1{
+    font-size: 6vw;
+    font-weight: 400;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+
+/* end menu */
+
+
+/* page2 */
+.page2{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    padding: 4vw 3vw;
+    position: relative;
+}
+.element{
+    width: 100%;
+    position: relative;
+    padding: 2vw 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #888;
+    /* background-color: red; */
+    cursor: pointer;
+}
+
+.element h1{
+    font-size: 7vw;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.element h5{
+    font-size: 1vw;
+    font-weight: 300;
+    color: #888;
+}
+
+.element img{
+  
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.element:last-child{
+    border-bottom: 1px solid #888;
+}
+/* page2 end */
+
+/* page3 */
+.page3{
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    padding-top:10vh;
+    padding-bottom: 5vh;
+
+}
+
+.page3 .imgcontainer{
+    width: 20vmax;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    
+}
+
+.imgcontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    /* border-radius: 50%; */
+    
+    
+
+}
+.page3 .about{
+    width: 40%;
+    height: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start; 
+}
+.about p{
+    font-size: 0.9vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+}
+
+.about h4{
+    line-height: 1.5vw;
+    word-spacing: 2px;
+    word-spacing: 2px;
+    display: inline-block;
+}
+
+.about h4 span{
+    opacity: 0.3;
+    font-size: 1.1vw;
+}
+/* .about a{
+    font-size: 0.9vw;
+    font-weight: 400;
+    margin-top: 2vw;
+    border: 1px solid #888;
+    border-radius: 0.4vw;
+    padding: 0.5vw 1.2vw;
+    text-transform: capitalize;
+} */
+
+
+.page4{
+    width: 100%;
+    height: 100vh;
+}
+/* page3 end */
+
+
+
+/* page 4 project */
+
+
+.page4{
+        width: 100%;
+        min-height: 130vh;
+        position: relative;
+        background-color: black;
+    
+}
+
+.textContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    position: absolute;
+    top: 25%;
+}
+.textContainer h1{
+    font-size: 6vw;
+
+}
+.textContainer p{
+    font-size: 2vw;
+}
+
+.pages{
+    width: 100%;
+    height: 80vh;
+    border: 2px solid red;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+
+
+}
+
+.pages img{
+    width: 100%;
+    height: 100%;
+}
+
+#page1{
+    top:100%;
+}
+#page2{
+    top:200%;
+}
+#page3{
+    top:210%;
+}
+
+
+
+/* end */
+
+footer{
+    width: 100%;
+    height: 10vh;
+    padding: 0 3vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer .left-footer ,.right-footer{
+    display: flex;
+    gap: 1vw;
+}
+
+
+

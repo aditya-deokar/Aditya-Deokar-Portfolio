@@ -1,0 +1,179 @@
+@media screen and (max-width:900px) {
+
+    /* nav bar */
+
+    nav {
+        padding: 5vw 4vw;
+        align-items: flex-end;
+    }
+
+    nav a,
+    nav h4 {
+        font-size: 1.6vmax;
+        width: min-content;
+    }
+
+
+    /* nav bar */
+
+    /* page1  */
+
+
+
+    .page1 {
+        height: 70vh;
+        justify-content: center;
+    }
+
+    .p1body {
+        height: 60%;
+    }
+
+    .headingbase {
+        height: 16vh;
+        line-height: 2.3vw;
+    }
+
+
+
+    .heading h1 {
+        font-size: 10vw;
+    }
+
+
+    .frame span {
+        font-size: 10vw;
+        height: 11vw;
+    }
+
+    .frame {
+        height: 10vw;
+    }
+
+    h4 {
+        font-size: 2vw;
+    }
+
+
+    .headingp2 {
+        width: 68%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .p1bottom {
+        align-items: flex-end;
+    }
+
+    .links {
+        width: 45%;
+    }
+
+    .p1bottom .arrows {
+        width: 8%;
+    }
+
+    /* page1 end */
+
+
+
+    /* menu */
+    .menu {
+        flex-direction: column;
+    }
+
+   
+
+    .menunav {
+        width: 95vw;
+        position: absolute;
+        top: 0;
+        padding-right: 3vw;
+
+    }
+
+    .left-menu {
+        height: 70vh;
+        margin-top: 4vw;
+
+    }
+
+    .left-menu h1 span {
+        font-size: 8vw;
+    }
+
+    .right-menu {
+        border-top: 1px solid red;
+       
+        /* padding: 2vw 20vw; */
+        width: 62%;
+        margin-top: 3vw;
+        padding-top: 0.9vw;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+
+
+    /* end menu */
+
+
+    /* page2 */
+
+    .page2{
+        width: 100%;
+        height: fit-content;
+        padding: 4vw 4vw;
+    }
+    /* page2 end */
+
+    /* page3 */
+
+    .page3{
+        flex-direction: column-reverse;
+        padding-top:10vh;
+        padding-bottom: 5vh;
+        min-height: 100vh;
+    
+    }
+    
+    .page3 .imgcontainer{
+        width: 70%;
+        min-height: 50vmax;
+        
+    }
+    
+
+    .page3 .about{
+        width: 70%;
+        padding-top: 3vw;
+        
+    }
+    .about p{
+        font-size: 4.5vw;
+        font-weight: 400;
+        margin-bottom: 2vw;
+    }
+    
+    .about h4{
+        line-height: 3vw;
+    }
+    
+    .about h4 span{  
+        font-size: 3vw;
+    }
+    /* page3 end */
+
+
+
+
+
+
+
+
+
+}
