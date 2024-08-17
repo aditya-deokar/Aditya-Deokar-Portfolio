@@ -35,6 +35,7 @@ h4{
     z-index: 999;
     transform: translate(-50%,-50%);
     pointer-events: none;
+    mix-blend-mode: difference;
 
 }
 main{
@@ -102,7 +103,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1vw 3vw;
+    padding: 1.2vw 3vw;
    background-color: transparent;
    position: relative;
    z-index: 9;
@@ -125,6 +126,7 @@ nav h4{
     justify-content: flex-start;
     position: relative;
     padding: 1vw 3vw;
+    margin-top: 3vw;
 }
 
 .p1body .heading{
@@ -140,7 +142,7 @@ nav h4{
     font-size: 9vw;
     line-height: 1;
     /* padding-left: 3vw; */
-    opacity: 0.65;
+    /* opacity: 0.65; */
    
 }
 
@@ -207,8 +209,8 @@ nav h4{
     align-items: center;
     gap: 2vw;
     padding: 4vw 3vw;
-    background-color: rgba(29, 28, 28, 0.448);
-    backdrop-filter: blur(30px);
+    background-color: rgba(14, 14, 14, 0.368);
+    backdrop-filter: blur(100px);
     transform: translateX(100%);
     z-index: 99;
     overflow: hidden;
@@ -470,13 +472,14 @@ nav h4{
 
 footer{
     width: 100%;
-    height: 10vh;
-    padding: 0 3vw;
+    height: 15vh;
+    padding: 4vw 3vw;
     background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
 
 }
 
@@ -487,3 +490,89 @@ footer .left-footer ,.right-footer{
 
 
 
+/* page5 */
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(153, 228, 203); */
+    background-color: black;
+    position: relative;
+    
+}
+
+.page5 h1{
+    color: black;
+}
+
+.top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.bottum{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.center{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+.page5 h1{
+    font-size: 20vw;
+    font-weight: 900;
+  
+}
+#top-h1{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+}
+#bottum-h1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.skill-container{
+  
+    width: 100%;
+    height: 1o0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-container .skill1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 1; 
+}
+.skill-container .skill2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 1; 
+}
+/* page5 end */

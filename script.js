@@ -5,7 +5,7 @@ function locomotiveAnimation() {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector("main"),
     smooth: true,
-    lerp:0.08,
+    lerp: 0.08,
 
     // for tablet smooth
     tablet: { smooth: true },
@@ -62,7 +62,7 @@ function mouseFollower() {
       left: dets.clientX,
       top: dets.clientY,
       ease: Power1,
-      duration: 1
+      duration: 0.5
 
     })
 
@@ -79,6 +79,7 @@ function mouseFollower() {
         duration: 0.5,
         delay: -1,
         ease: Power1,
+        mixBlendMode: "difference",
       });
 
     })
@@ -86,8 +87,7 @@ function mouseFollower() {
     frame.addEventListener("mouseleave", function () {
 
       gsap.to(circle, {
-        scale: 1
-
+        scale: 1,
       })
     })
 
@@ -101,14 +101,14 @@ function page1Animation() {
     // duration:0.2,
     opacity: 0,
     ease: Expo.easeInOut,
-  },"a")
+  }, "a")
   tl.to(".boundElem", {
     y: 0,
     duration: 1.5,
     delay: -1.8,
     ease: Expo.easeInOut,
     stagger: 0.2
-  },"a")
+  }, "a")
   tl.from(".p1bottom ,.arrows", {
     y: -20,
     opacity: 0,
@@ -238,12 +238,12 @@ open.addEventListener("click", () => {
   var tl = gsap.timeline();
 
   tl.to(".blackscreen", {
-    duration:0.9,
+    duration: 0.9,
     ease: Power3.easeInOut,
     x: "-100%",
   })
   tl.to(".menu", {
-    delay:-0.8,
+    delay: -0.8,
     duration: 0.5,
     ease: Power3.easeInOut,
     x: 0,
@@ -274,15 +274,15 @@ open.addEventListener("click", () => {
 
 })
 
-var open = document.querySelector(".close");
-open.addEventListener("click", () => {
+var close = document.querySelector(".close");
+close.addEventListener("click", () => {
   gsap.to(".menu", {
     x: "100%",
     ease: Power3.easeInOut,
   })
   gsap.to(".blackscreen", {
     x: "100%",
-    delay:0.2,
+    delay: 0.2,
     ease: Power3.easeInOut,
   })
 })
@@ -348,34 +348,32 @@ function page4Animation() {
 
 }
 
-page4Animation();
+function page3Animation() {
 
-function page3Animation(){
-
-  var allH4=document.querySelectorAll(".aboutText h4");
-  allH4.forEach(function(elem){
-    var h4text=elem.textContent;
-    var cluter="";
-    var splitedText=h4text.split("");
-    splitedText.forEach(function(e){
-      cluter+=`<span>${e}</span>`;
+  var allH4 = document.querySelectorAll(".aboutText h4");
+  allH4.forEach(function (elem) {
+    var h4text = elem.textContent;
+    var cluter = "";
+    var splitedText = h4text.split("");
+    splitedText.forEach(function (e) {
+      cluter += `<span>${e}</span>`;
     })
-    elem.innerHTML=cluter;
+    elem.innerHTML = cluter;
   })
 
 
 
-  gsap.to(".aboutText h4 span",{
-    opacity:1,
-    color:"white",
-    stagger:0.2,
-    scrollTrigger:{
-      start:"top 75%",
-      end:"top 25%",
+  gsap.to(".aboutText h4 span", {
+    opacity: 1,
+    color: "white",
+    stagger: 0.2,
+    scrollTrigger: {
+      start: "top 75%",
+      end: "top 25%",
       // markers:true,
-      scrub:2,
-      scroller:"main",
-      trigger:".aboutText h4",
+      scrub: 2,
+      scroller: "main",
+      trigger: ".aboutText h4",
     }
   })
   // gsap.to(".about a",{
@@ -386,4 +384,86 @@ function page3Animation(){
   // })
 
 }
+
+
 page3Animation();
+
+
+
+
+
+function page5Animation() {
+
+
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page5",
+      scroller: "main",
+      start: "50% 50%",
+      end: "200% 50%",
+      // markers: true,
+      scrub: 3,
+      pin: true
+    }
+  });
+  tl.to(".top ,.bottum", {
+    backgroundColor: "white",
+    duration: 1.5,
+    scrub: false,
+  });
+  tl.to(".top", {
+    duration:1.3,
+    top: "-50%",
+  }, "a");
+  tl.to(".bottum", {
+    duration:1.3,
+    bottom: "-50%",
+  }, "a");
+  tl.to("#top-h1", {
+    top: "120%",
+  }, "a");
+  tl.to("#bottum-h1", {
+    top: "-20%",
+  }, "a");
+  // tl.to(".skill-container", {
+  //   marginTop: "0",
+  // }, "a");
+  tl.to(".bottum", {
+    opacity: 0,
+    display: "none",
+    scrub: false
+  });
+  tl.from(".skill1", {
+    opacity: 0,
+    y: "100%",
+    delay: 0.6,
+    scrub: 2
+
+  }, "a");
+  tl.to(".skill1", {
+    duration: 2,
+    y: "-30%",
+    scrub: 2,
+    pin: true
+
+  });
+  tl.to(".skill1", {
+    opacity: 0,
+    y: "-100%",
+
+  });
+  tl.from(".skill2", {
+    opacity: 0,
+    y: "40%",
+    scrub: 2
+
+  });
+  tl.to(".skill2", {
+    duration: 2,
+    y: "-30%",
+    scrub: 2, pin: true
+  });
+}
+
+page5Animation();
+page4Animation();
