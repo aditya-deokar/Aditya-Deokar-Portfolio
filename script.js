@@ -40,10 +40,6 @@ locomotiveAnimation();
 
 
 
-
-
-
-
 function displayTime() {
   var currentTime = document.getElementById("currentTime");
 
@@ -226,68 +222,65 @@ function page2Animation() {
 
 }
 
-mouseFollower();
-
-displayTime();
-page1Animation();
-page2Animation();
 
 
-var open = document.querySelector(".open");
-open.addEventListener("click", () => {
-  var tl = gsap.timeline();
+function menuAnimation() {
+  var open = document.querySelector(".open");
+  open.addEventListener("click", () => {
+    var tl = gsap.timeline();
 
-  tl.to(".blackscreen", {
-    duration: 0.9,
-    ease: Power3.easeInOut,
-    x: "-100%",
+    tl.to(".blackscreen", {
+      duration: 0.9,
+      ease: Power3.easeInOut,
+      x: "-100%",
+    })
+    tl.to(".menu", {
+      delay: -0.8,
+      duration: 0.5,
+      ease: Power3.easeInOut,
+      x: 0,
+    })
+    tl.from(".left-menu , right-menu", {
+      x: "-100%",
+      delay: -0.4,
+      stagger: {
+        amount: 0.2,
+      }
+    })
+    tl.from(".left-menu h1", {
+      x: "-100%",
+      delay: -0.4,
+      stagger: {
+        amount: 0.2,
+      }
+    })
+    tl.from(".right-menu h1", {
+      y: "100%",
+      opacity: 0,
+      delay: -0.4,
+      stagger: {
+        amount: 0.2,
+      }
+    })
+
+
   })
-  tl.to(".menu", {
-    delay: -0.8,
-    duration: 0.5,
-    ease: Power3.easeInOut,
-    x: 0,
-  })
-  tl.from(".left-menu , right-menu", {
-    x: "-100%",
-    delay: -0.4,
-    stagger: {
-      amount: 0.2,
-    }
-  })
-  tl.from(".left-menu h1", {
-    x: "-100%",
-    delay: -0.4,
-    stagger: {
-      amount: 0.2,
-    }
-  })
-  tl.from(".right-menu h1", {
-    y: "100%",
-    opacity: 0,
-    delay: -0.4,
-    stagger: {
-      amount: 0.2,
-    }
+
+  var close = document.querySelector(".close");
+  close.addEventListener("click", () => {
+    gsap.to(".menu", {
+      x: "100%",
+      ease: Power3.easeInOut,
+    })
+    gsap.to(".blackscreen", {
+      x: "100%",
+      delay: 0.2,
+      ease: Power3.easeInOut,
+    })
   })
 
 
-})
-
-var close = document.querySelector(".close");
-close.addEventListener("click", () => {
-  gsap.to(".menu", {
-    x: "100%",
-    ease: Power3.easeInOut,
-  })
-  gsap.to(".blackscreen", {
-    x: "100%",
-    delay: 0.2,
-    ease: Power3.easeInOut,
-  })
-})
-
-
+}
 
 
 function page4Animation() {
@@ -307,10 +300,10 @@ function page4Animation() {
   );
 
   tl.to(".textContainer", {
-    top: "-6%"
+    top: "5%"
   }, 'a')
   tl.to("#page1", {
-    top: "35%",
+    top: "40%",
     width: "90%",
     height: "85vh",
     borderRadius: "50px"
@@ -322,7 +315,7 @@ function page4Animation() {
 
   tl.to("#page1", {
     width: "76%",
-    height: "76vh",
+    height: "85vh",
     opacity: 0.8,
   }, 'b')
   tl.to("#page2", {
@@ -385,13 +378,6 @@ function page3Animation() {
 
 }
 
-
-page3Animation();
-
-
-
-
-
 function page5Animation() {
 
 
@@ -412,11 +398,11 @@ function page5Animation() {
     scrub: false,
   });
   tl.to(".top", {
-    duration:1.3,
+    duration: 1.3,
     top: "-50%",
   }, "a");
   tl.to(".bottum", {
-    duration:1.3,
+    duration: 1.3,
     bottom: "-50%",
   }, "a");
   tl.to("#top-h1", {
@@ -435,35 +421,60 @@ function page5Animation() {
   });
   tl.from(".skill1", {
     opacity: 0,
-    y: "100%",
+    y: 200,
     delay: 0.6,
     scrub: 2
 
   }, "a");
   tl.to(".skill1", {
-    duration: 2,
-    y: "-30%",
+   
+    y: -200,
     scrub: 2,
-    pin: true
+    
 
   });
   tl.to(".skill1", {
     opacity: 0,
-    y: "-100%",
+    scale:.8,
+   
 
   });
   tl.from(".skill2", {
     opacity: 0,
-    y: "40%",
-    scrub: 2
+    y: 200,
+    scrub: 2,
+    delay:-0.6,
 
   });
   tl.to(".skill2", {
-    duration: 2,
+    
     y: "-30%",
-    scrub: 2, pin: true
+    scrub: 2,
+  });
+  tl.to(".skill2", {
+    
+    y: -200,
+    scrub: 2,
+    
+
+  });
+  tl.to(".skill2", {
+    opacity: 0,
+    scale:.8,
+   
+
   });
 }
 
+
+
+
+mouseFollower();
+displayTime();
+
+page1Animation();
+menuAnimation();
+page2Animation();
+page3Animation();
 page5Animation();
 page4Animation();
