@@ -330,7 +330,7 @@ nav h4{
 /* page3 */
 .page3{
     width: 100%;
-    height: 75vh;
+    height: 85vh;
     background-color: black;
     position: relative;
 
@@ -349,6 +349,7 @@ nav h4{
     height: 100%;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     overflow: hidden;
@@ -360,10 +361,11 @@ nav h4{
     height: 100%;
     object-fit: cover;
     object-position: left;
-    /* border-radius: 50%; */
-    
-    
-
+    /* border-radius: 50%; */ 
+}
+.imgcontainer h2{
+    padding-top: 2vw;
+    /* margin-top: 2vw; */
 }
 .page3 .about{
     width: 40%;
@@ -390,15 +392,26 @@ nav h4{
     opacity: 0.3;
     font-size: 1.1vw;
 }
-/* .about a{
-    font-size: 0.9vw;
-    font-weight: 400;
-    margin-top: 2vw;
-    border: 1px solid #888;
-    border-radius: 0.4vw;
-    padding: 0.5vw 1.2vw;
-    text-transform: capitalize;
-} */
+.about .btn-con{
+    margin: 2.5vw 0;
+    border: 1px solid #fff;
+    padding: 1vw 2vw;
+    transition: all ease-in 0.5s;
+    font-weight: 700;
+}
+.about .btn-con:hover{
+    color: black;
+    background-color: #fff;
+    border: 1px solid black; 
+    
+}
+.btn-con:hover a{
+    color: black;
+    font-style: italic;
+    font-weight: 700;
+   
+}
+
 
 
 .page4{
@@ -498,7 +511,10 @@ footer .left-footer ,.right-footer{
     /* background-color: rgb(153, 228, 203); */
     background-color: black;
     position: relative;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .page5 h1{
@@ -522,7 +538,7 @@ footer .left-footer ,.right-footer{
     height: 50vh;
     background-color: black;
     overflow: hidden;
-    z-index: 1;
+    z-index: 99;
 
 }
 .center{
@@ -530,6 +546,12 @@ footer .left-footer ,.right-footer{
     width: 100%;
     height: 100vh;
     background-color: black;
+    display: flex;
+    gap: 5vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 1;
 
 }
 .page5 h1{
@@ -550,29 +572,50 @@ footer .left-footer ,.right-footer{
     transform: translate(-50%,-50%);
 }
 
-
+.title-p5{
+    padding-top: 10vh;
+    margin-top: 10vh;
+    font-size: 4vw;
+    height: fit-content;
+    overflow: hidden;
+}
 .skill-container{
-  
     width: 100%;
-    height: 1o0vh;
+    /* height: 100vh; */
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 2vw;
 }
 
-.skill-container .skill1{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    opacity: 1; 
+.skill-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vw;
+    
 }
-.skill-container .skill2{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    opacity: 1; 
+
+.sk{
+    padding: 0.6vw 1.1vw;
+    border: 1px solid #fff;
+    font-size: 2vw;
+    color: #fff;
+    border-radius: 1vw;
+    text-transform: uppercase;
+    transition: all ease-in 0.4s;
+    cursor: pointer;
+    filter: blur(10px);
+    opacity: 0;
+    transition: all ease 1s;
 }
+.sk:hover{
+    background-color: #fff;
+    color: black;
+    border:1px solid black;
+}
+
 /* page5 end */

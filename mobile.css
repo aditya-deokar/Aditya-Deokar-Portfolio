@@ -53,6 +53,9 @@
     h4 {
         font-size: 2vw;
     }
+    h1{
+        font-size: 4vmin;
+    }
 
 
     .headingp2 {
@@ -135,7 +138,7 @@
 
     .page3{
         flex-direction: column-reverse;
-        padding-top:10vh;
+        padding-top:0vh;
         padding-bottom: 5vh;
         min-height: 100vh;
     
@@ -154,12 +157,14 @@
         
     }
     .about p{
-        font-size: 4.5vw;
+        font-size: 5.5vw;
         font-weight: 400;
-        margin-bottom: 2vw;
+        margin: 3vw 0
     }
     
     .about h4{
+        font-weight: 400;
+        font-size: 4vmax;
         line-height: 3vw;
     }
     

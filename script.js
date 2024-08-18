@@ -78,6 +78,7 @@ function mouseFollower() {
         mixBlendMode: "difference",
       });
 
+
     })
 
     frame.addEventListener("mouseleave", function () {
@@ -85,6 +86,7 @@ function mouseFollower() {
       gsap.to(circle, {
         scale: 1,
       })
+
     })
 
   })
@@ -222,8 +224,6 @@ function page2Animation() {
 
 }
 
-
-
 function menuAnimation() {
   var open = document.querySelector(".open");
   open.addEventListener("click", () => {
@@ -281,7 +281,6 @@ function menuAnimation() {
 
 
 }
-
 
 function page4Animation() {
 
@@ -369,12 +368,7 @@ function page3Animation() {
       trigger: ".aboutText h4",
     }
   })
-  // gsap.to(".about a",{
-  //   scale:1.06,
-  //   duration:1,
-  //   repeat:-1,
-
-  // })
+  
 
 }
 
@@ -419,51 +413,69 @@ function page5Animation() {
     display: "none",
     scrub: false
   });
-  tl.from(".skill1", {
+  tl.from(".title-p5 h2", {
     opacity: 0,
-    y: 200,
-    delay: 0.6,
-    scrub: 2
-
-  }, "a");
-  tl.to(".skill1", {
-   
-    y: -200,
-    scrub: 2,
-    
-
+    y: 300,
+    delay: -1.5
   });
-  tl.to(".skill1", {
+  tl.to(".title-p5 h2", {
+
     opacity: 0,
-    scale:.8,
-   
 
   });
-  tl.from(".skill2", {
-    opacity: 0,
-    y: 200,
-    scrub: 2,
-    delay:-0.6,
+
+
+}
+
+
+function skillShowcase() {
+
+
+  var tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".center",
+      scroller: "main",
+      start: "30% 50%",
+      end: "90% 0%",
+      // markers: true,
+      
+      // scrub:true,
+      stagger: {
+        amount: 0.4
+      },
+      pin: true
+    }
 
   });
-  tl.to(".skill2", {
-    
-    y: "-30%",
-    scrub: 2,
-  });
-  tl.to(".skill2", {
-    
-    y: -200,
-    scrub: 2,
-    
 
-  });
-  tl.to(".skill2", {
-    opacity: 0,
-    scale:.8,
-   
-
-  });
+  tl2.to(".skill-container h2", {
+    opacity: 1,
+    y: -50
+  })
+  tl2.to(".sk1 ,.sk10", {
+    opacity: 1,
+    filter: "blur(0)"
+  })
+  tl2.to(".sk3 ,.sk4", {
+    opacity: 1,
+    filter: "blur(0)"
+  })
+  tl2.to(".sk2 ,.sk12", {
+    opacity: 1,
+    filter: "blur(0)"
+  })
+  tl2.to(".sk7 ,.sk9", {
+    opacity: 1,
+    filter: "blur(0)"
+  })
+  tl2.to(".sk5 ,.sk11", {
+    opacity: 1,
+    filter: "blur(0)"
+  })
+  tl2.to(".sk6 ,.sk8", {
+    opacity: 1,
+    filter: "blur(0)"
+  })
 }
 
 
@@ -474,7 +486,9 @@ displayTime();
 
 page1Animation();
 menuAnimation();
-page2Animation();
+
 page3Animation();
 page5Animation();
+skillShowcase();
 page4Animation();
+page2Animation();
