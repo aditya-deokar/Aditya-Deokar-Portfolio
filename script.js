@@ -1,34 +1,36 @@
 
+
+
+
 function locomotiveAnimation() {
   gsap.registerPlugin(ScrollTrigger);
 
   const locoScroll = new LocomotiveScroll({
-    el: document.querySelector("main"),
-    smooth: true,
-    lerp: 0.08,
+      el: document.querySelector("main"),
+      smooth: true,
 
-    // for tablet smooth
-    tablet: { smooth: true },
+      // for tablet smooth
+      tablet: { smooth: true },
 
-    // for mobile
-    smartphone: { smooth: true }
+      // for mobile
+      smartphone: { smooth: true }
   });
   locoScroll.on("scroll", ScrollTrigger.update);
 
   ScrollTrigger.scrollerProxy("main", {
-    scrollTop(value) {
-      return arguments.length
-        ? locoScroll.scrollTo(value, 0, 0)
-        : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-      return {
-        top: 0,
-        left: 0,
-        width: window.innerWidth,
-        height: window.innerHeight
-      };
-    }
+      scrollTop(value) {
+          return arguments.length
+              ? locoScroll.scrollTo(value, 0, 0)
+              : locoScroll.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+          return {
+              top: 0,
+              left: 0,
+              width: window.innerWidth,
+              height: window.innerHeight
+          };
+      }
   });
 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
@@ -37,6 +39,8 @@ function locomotiveAnimation() {
 }
 
 locomotiveAnimation();
+
+
 
 
 
@@ -93,7 +97,6 @@ function mouseFollower() {
 }
 
 function page1Animation() {
-
   var tl = gsap.timeline();
   tl.from("nav", {
     // duration:0.2,
@@ -225,6 +228,29 @@ function page2Animation() {
 }
 
 function menuAnimation() {
+
+  var menuContainer=document.querySelector(".menu");
+  menuContainer.addEventListener("click",function(dets){
+      let targetElement=dets.target.textContent;
+      console.log(targetElement)
+      // for close
+      if(targetElement== "close"){
+          gsap.to(".menu", {
+            x: "100%",
+            ease: Power3.easeInOut,
+          })
+          gsap.to(".blackscreen", {
+            x: "100%",
+            delay: 0.2,
+            ease: Power3.easeInOut,
+          })
+      }
+      // for menues
+      
+  })
+
+
+
   var open = document.querySelector(".open");
   open.addEventListener("click", () => {
     var tl = gsap.timeline();
@@ -266,18 +292,6 @@ function menuAnimation() {
 
   })
 
-  var close = document.querySelector(".close");
-  close.addEventListener("click", () => {
-    gsap.to(".menu", {
-      x: "100%",
-      ease: Power3.easeInOut,
-    })
-    gsap.to(".blackscreen", {
-      x: "100%",
-      delay: 0.2,
-      ease: Power3.easeInOut,
-    })
-  })
 
 
 }
@@ -436,12 +450,11 @@ function skillShowcase() {
       trigger: ".center",
       scroller: "main",
       start: "30% 50%",
-      end: "90% 0%",
-      // markers: true,
+      end: "100% 0%",
+      markers: true,
       
-      // scrub:true,
-      stagger: {
-        amount: 0.4
+      stagger:{
+        amount:0.3
       },
       pin: true
     }
@@ -455,6 +468,7 @@ function skillShowcase() {
   tl2.to(".sk1 ,.sk10", {
     opacity: 1,
     filter: "blur(0)"
+  
   })
   tl2.to(".sk3 ,.sk4", {
     opacity: 1,
@@ -492,3 +506,5 @@ page5Animation();
 skillShowcase();
 page4Animation();
 page2Animation();
+
+
