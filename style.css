@@ -414,10 +414,7 @@ nav h4{
 
 
 
-.page4{
-    width: 100%;
-    height: 100vh;
-}
+
 /* page3 end */
 
 
@@ -454,7 +451,7 @@ nav h4{
 .pages{
     width: 100%;
     height: 80vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     top:50%;
     left:50%;
@@ -464,10 +461,45 @@ nav h4{
 
 }
 
+.pages-body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .pages img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    filter: contrast(80%);
 }
+
+.pro-bottom h1{
+    font-size: 9vw;
+    color: #3c3a3a6a;
+    /* -webkit-text-stroke: 1px rgba(53, 51, 51, 0.311); */
+    filter: drop-shadow(10px 10px 10px black);
+    /* backdrop-filter: blur(4px); */
+    position: absolute;
+    bottom: 6%;
+    left: 1%;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.pro-bottom h4{
+    font-size: 3vw;
+    color: #3c3a3a6a;
+    /* -webkit-text-stroke: 1px rgba(53, 51, 51, 0.311); */
+    filter: drop-shadow(10px 10px 10px black);
+    /* backdrop-filter: blur(4px); */
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
 
 #page1{
     top:100%;
@@ -478,6 +510,7 @@ nav h4{
 #page3{
     top:210%;
 }
+
 
 
 
