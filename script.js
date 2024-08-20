@@ -226,8 +226,9 @@ document.addEventListener("DOMContentLoaded", function () {
           x: 0,
           scale: 1
         });
-        gsap.to(elem.querySelector("h5"), {
+        gsap.to(elem.querySelector("span img"), {
           opacity: 1,
+          scale:1
         });
 
 
@@ -250,8 +251,9 @@ document.addEventListener("DOMContentLoaded", function () {
           ease: Power3,
           x: 45,
         });
-        gsap.to(elem.querySelector("h5"), {
+        gsap.to(elem.querySelector("span img"), {
           opacity: 0.3,
+          scale:0.9
         });
 
 
@@ -346,8 +348,8 @@ document.addEventListener("DOMContentLoaded", function () {
         pin: true
       }
     });
-    tl1.to(".textContainer h1",{
-      
+    tl1.to(".textContainer h1", {
+
     })
 
     var tl = gsap.timeline(
@@ -381,7 +383,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to("#page1", {
       width: "76%",
       height: "85vh",
-     
+
     }, 'b')
     tl.to("#page2", {
       top: "45%",
@@ -544,9 +546,49 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   }
 
+  function educationAnimation() {
 
 
+    var tlp6 = gsap.timeline({
+      scrollTrigger: {
+        scroller: "main",
+        trigger: ".page6",
+        start: "top 0%",
+        end: "150% 90%",
+        // markers:true,
+        scrub: 2,
+        pin: true,
+      }
+    })
+    tlp6.to(".page6 h1", {
+      x: "-50%",
+    }, "a")
 
+
+    var tl2p6 = gsap.timeline({
+      scrollTrigger: {
+        scroller: "main",
+        trigger: ".page6",
+        start: "top 0%",
+        end: "100% 90%",
+        // markers:true,
+        scrub: 3
+
+      }
+    })
+
+    tl2p6.from("#hsc", {
+      opacity: 0,
+    })
+    tl2p6.from("#bca", {
+      opacity: 0,
+    })
+    tl2p6.from("#mca", {
+      opacity: 0,
+    })
+
+
+  }
   mouseFollower();
   displayTime();
 
@@ -558,6 +600,7 @@ document.addEventListener("DOMContentLoaded", function () {
   skillShowcase();
   page4Animation();
   page2Animation();
+  educationAnimation();
 
 
 });
