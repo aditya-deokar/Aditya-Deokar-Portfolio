@@ -327,20 +327,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function page4Animation() {
 
-    var tl1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".page4",
-        scroller: "main",
-        start: "10% 50%",
-        end: "30% 50%",
-        // markers: true,
-        scrub: 3,
-        pin: true
-      }
-    });
-    tl1.to(".textContainer h1", {
-
-    })
 
     var tl = gsap.timeline(
       {
@@ -493,14 +479,15 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: ".center",
         scroller: "main",
-        start: "30% 50%",
-        end: "100% 0%",
+        start: "-20% 50%",
+        end: "70% 50%",
         // markers: true,
 
         stagger: {
-          amount: 0.2
+          amount: 0.1
         },
-        pin: true
+       
+        // pin: true
       }
 
     });
@@ -609,7 +596,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-  
+
   mouseFollower();
   displayTime();
 
