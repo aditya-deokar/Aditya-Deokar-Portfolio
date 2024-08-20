@@ -2,16 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-  // Initialize Locomotive Scroll
-  // const scroll = new LocomotiveScroll({
-  //   el: document.querySelector('main'),
-  //   smooth: true,
-  // });
-
-
-
-
   function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -548,6 +538,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function educationAnimation() {
 
+    
+    document.querySelectorAll(".edu-box").forEach(function(elem){
+        elem.addEventListener("mouseover",function(){
+          gsap.to(elem,{
+            height:"20vh"
+          })
+          gsap.to(elem.querySelector(".clg-name"),{
+            opacity:1
+          },"a")
+          gsap.to(elem.querySelector("i"),{
+            opacity:0,
+          },"a")
+
+        })
+        elem.addEventListener("mouseleave",function(){
+          gsap.to(elem,{
+            height:"14vh"
+          })
+          gsap.to(elem.querySelector(".clg-name"),{
+            opacity:0
+          },"a")
+          gsap.to(elem.querySelector("i"),{
+            opacity:1
+          },"a")
+
+        })
+    });
+
+
 
     var tlp6 = gsap.timeline({
       scrollTrigger: {
@@ -589,6 +608,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   }
+
+  
   mouseFollower();
   displayTime();
 

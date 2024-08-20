@@ -307,7 +307,7 @@ nav h4{
     opacity: 0.7;
 }
 .element span{
-   width: 3vw;
+   width: 2vw;
    position: relative;
 }
 .element span img{
@@ -684,24 +684,42 @@ footer .left-footer ,.right-footer{
 .page6 .edu-box{
     background-color: #3c3a3a6a;
     min-width: 18vw;
+    height: 14vh;
     padding: 1vw 1.4vw;
     border-radius: 2vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5vw;
     position: absolute;
+    transform: translate(100% ,100%);
+    overflow: hidden;
     
 }
+
+.box-body{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 1.3vw;
+    
+}
+
 .edu-box span{
     font-size: 1vw;
     font-weight: 400;
     color: #888;
+    
 }
 .edu-box h4{
     font-size: 1.1vw;
 }
-
+.clg-name{
+    opacity: 0;
+}
 #hsc{
     bottom: 15%;
     left: 20%;
