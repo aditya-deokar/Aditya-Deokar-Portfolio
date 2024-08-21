@@ -1,10 +1,12 @@
 @media screen and (max-width:900px) {
 
+   
     /* nav bar */
 
     nav {
         padding: 5vw 4vw;
         align-items: flex-end;
+   
     }
 
     nav a,
@@ -26,41 +28,43 @@
     }
 
     .p1body {
-        height: 60%;
+        height: 40%;
+        padding: 1vw 0vw;
     }
 
     .headingbase {
         height: 16vh;
-        line-height: 2.3vw;
+        line-height: 3.5vw;
     }
 
 
 
     .heading h1 {
-        font-size: 10vw;
+        font-size: 15vw;
     }
 
 
     .frame span {
-        font-size: 10vw;
-        height: 11vw;
+        font-size: 15vw;
+        height: 16vw;
     }
 
     .frame {
-        height: 10vw;
+        height: 16vw;
     }
 
     h4 {
-        font-size: 2vw;
+        opacity: 0.8;
+        font-size: 3.5vw;
     }
 
     h1 {
-        font-size: 4vmin;
+        font-size: 16vw;
     }
 
 
     .headingp2 {
-        width: 68%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -71,11 +75,12 @@
     }
 
     .links {
-        width: 45%;
+        width: 60%;
     }
+   
 
-    .p1bottom .arrows {
-        width: 8%;
+    .p1bottom .arrows{
+        display: none;
     }
 
     /* page1 end */
@@ -84,6 +89,7 @@
 
     /* menu */
     .menu {
+      
         flex-direction: column;
     }
 
@@ -104,7 +110,7 @@
     }
 
     .left-menu h1 span {
-        font-size: 8vw;
+        font-size: 15vw;
     }
 
     .right-menu {
@@ -142,19 +148,18 @@
         flex-direction: column-reverse;
         padding-top: 0vh;
         padding-bottom: 5vh;
-        min-height: 100vh;
-
+        height: fit-content;
     }
 
     .page3 .imgcontainer {
-        width: 70%;
-        min-height: 50vmax;
+        width: 85%;
+        height: 65vmax;
 
     }
 
 
     .page3 .about {
-        width: 70%;
+        width: 85%;
         padding-top: 3vw;
 
     }
@@ -167,12 +172,12 @@
 
     .about h4 {
         font-weight: 400;
-        font-size: 3vmax;
-        line-height:2.5vmax;
+      
+        line-height:2.4vmax;
     }
 
     .about h4 span {
-        font-size: 3vw;
+        font-size: 2.4vmax;
     }
 
     /* page3 end */
@@ -261,23 +266,26 @@
     }
 
     #hsc {
-        bottom: 30%;
-        left: 20%;
+        top: 20%;
+        left: -46%;
     }
 
     #bca {
-        top: 25%;
-        left: 45%;
+       
+        top: 50%;
+        left: -97%;
     }
 
     #mca {
-        bottom: 10%;
-        left: 1%;
+        bottom: 22%;
+        left: -89%;
     }
 
     /* end page6 */
     /* page6 end */
-
+    footer{
+        flex-direction: column-reverse;
+    }
 
 
 

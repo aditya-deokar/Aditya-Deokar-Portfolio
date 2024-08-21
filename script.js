@@ -409,7 +409,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // markers:true,
         scrub: 2,
         scroller: "main",
-        trigger: ".aboutText h4",
+        trigger: ".aboutText",
       }
     })
 
