@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: Expo,
       stagger: 0.2
     })
-    tl.from(".links h4", {
+    tl.from(".links a", {
       x: -50,
       opacity: 0,
       delay: -1,
@@ -463,11 +463,8 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: -1.5
     });
     tl.to(".title-p5 h2", {
-
       opacity: 0,
-
     });
-
 
   }
 

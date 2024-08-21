@@ -1,12 +1,12 @@
 @media screen and (max-width:900px) {
 
-   
+
     /* nav bar */
 
     nav {
         padding: 5vw 4vw;
         align-items: flex-end;
-   
+
     }
 
     nav a,
@@ -23,7 +23,7 @@
 
 
     .page1 {
-        height: 70vh;
+        height: 80vh;
         justify-content: center;
     }
 
@@ -77,9 +77,9 @@
     .links {
         width: 60%;
     }
-   
 
-    .p1bottom .arrows{
+
+    .p1bottom .arrows {
         display: none;
     }
 
@@ -89,7 +89,7 @@
 
     /* menu */
     .menu {
-      
+
         flex-direction: column;
     }
 
@@ -172,8 +172,8 @@
 
     .about h4 {
         font-weight: 400;
-      
-        line-height:2.4vmax;
+
+        line-height: 2.4vmax;
     }
 
     .about h4 span {
@@ -185,14 +185,14 @@
 
     /* page5 */
     .sk {
-        padding: 2.5vw 2vw;
-        border: 1px solid #fff;
+        padding: 2vw 3vw;
         font-size: 5vmin;
         border-radius: 3vw;
     }
 
     .skill-container {
         gap: 4vw;
+        padding-bottom: 8vw;
     }
 
     .skill-row {
@@ -235,9 +235,9 @@
         height: fit-content;
         padding: 2vw 2.4vw;
         border-radius: 3vw;
-       
+
         gap: 0.5vw;
-        
+
 
     }
 
@@ -245,7 +245,7 @@
         padding-bottom: 1.3vw;
     }
 
-    .box-body i{
+    .box-body i {
         opacity: 0;
     }
 
@@ -261,7 +261,7 @@
     }
 
     h4.clg-name {
-        font-size:3vw ;
+        font-size: 3vw;
         opacity: 1;
     }
 
@@ -271,7 +271,7 @@
     }
 
     #bca {
-       
+
         top: 50%;
         left: -97%;
     }
@@ -281,9 +281,42 @@
         left: -89%;
     }
 
+
+
+
     /* end page6 */
-    /* page6 end */
-    footer{
+
+
+    /* form */
+
+    form {
+       
+        width: 70%;
+        height: fit-content;
+        gap: 1.6vw;
+       
+        background-color: rgba(0, 0, 0, 0.845);
+        z-index: 99;
+    }
+
+    input,
+    textarea {
+        padding: 2.5vw 2.5vw;
+        border-radius: 1.5vw;
+        font-size: 3.9vw;
+    }
+
+    form button {
+        padding: 2vw 2vw;
+        font-size: 4.6vw;
+    }
+
+    form button:hover {
+        color: #888;
+    }
+
+    /* form end */
+    footer {
         flex-direction: column-reverse;
     }
 
