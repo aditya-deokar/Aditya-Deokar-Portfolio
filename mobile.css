@@ -53,7 +53,8 @@
     h4 {
         font-size: 2vw;
     }
-    h1{
+
+    h1 {
         font-size: 4vmin;
     }
 
@@ -86,7 +87,7 @@
         flex-direction: column;
     }
 
-   
+
 
     .menunav {
         width: 95vw;
@@ -108,12 +109,12 @@
 
     .right-menu {
         border-top: 1px solid red;
-       
+
         /* padding: 2vw 20vw; */
         width: 62%;
         margin-top: 3vw;
         padding-top: 0.9vw;
-        
+
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -127,55 +128,155 @@
 
     /* page2 */
 
-    .page2{
+    .page2 {
         width: 100%;
         height: fit-content;
         padding: 4vw 4vw;
     }
+
     /* page2 end */
 
     /* page3 */
 
-    .page3{
+    .page3 {
         flex-direction: column-reverse;
-        padding-top:0vh;
+        padding-top: 0vh;
         padding-bottom: 5vh;
         min-height: 100vh;
-    
+
     }
-    
-    .page3 .imgcontainer{
+
+    .page3 .imgcontainer {
         width: 70%;
         min-height: 50vmax;
-        
-    }
-    
 
-    .page3 .about{
+    }
+
+
+    .page3 .about {
         width: 70%;
         padding-top: 3vw;
-        
+
     }
-    .about p{
+
+    .about p {
         font-size: 5.5vw;
         font-weight: 400;
         margin: 3vw 0
     }
-    
-    .about h4{
+
+    .about h4 {
         font-weight: 400;
-        font-size: 4vmax;
-        line-height: 3vw;
+        font-size: 3vmax;
+        line-height:2.5vmax;
     }
-    
-    .about h4 span{  
+
+    .about h4 span {
         font-size: 3vw;
     }
+
     /* page3 end */
 
 
+    /* page5 */
+    .sk {
+        padding: 2.5vw 2vw;
+        border: 1px solid #fff;
+        font-size: 5vmin;
+        border-radius: 3vw;
+    }
+
+    .skill-container {
+        gap: 4vw;
+    }
+
+    .skill-row {
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    /* page5 end */
 
 
+    /* page4 */
+    .textContainer h1 {
+        font-size: 16vw;
+    }
+
+    .textContainer p {
+        font-size: 3vw;
+    }
+
+    .pro-bottom h4 {
+        font-size: 6vw;
+        top: 6%;
+        right: 4%;
+    }
+
+    .pro-bottom h1 {
+        font-size: 12vw;
+        bottom: 5%;
+        left: 3%;
+    }
+
+    /* page4 end */
+
+
+    /* page6 */
+
+    .page6 .edu-box {
+        background-color: #3c3a3a6a;
+        min-width: 10vw;
+        height: fit-content;
+        padding: 2vw 2.4vw;
+        border-radius: 3vw;
+       
+        gap: 0.5vw;
+        
+
+    }
+
+    .box-body {
+        padding-bottom: 1.3vw;
+    }
+
+    .box-body i{
+        opacity: 0;
+    }
+
+    .edu-box span {
+        font-size: 3vw;
+        font-weight: 400;
+        color: #888;
+
+    }
+
+    .edu-box h4 {
+        font-size: 5vw;
+    }
+
+    h4.clg-name {
+        font-size:3vw ;
+        opacity: 1;
+    }
+
+    #hsc {
+        bottom: 30%;
+        left: 20%;
+    }
+
+    #bca {
+        top: 25%;
+        left: 45%;
+    }
+
+    #mca {
+        bottom: 10%;
+        left: 1%;
+    }
+
+    /* end page6 */
+    /* page6 end */
 
 
 

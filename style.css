@@ -209,7 +209,7 @@ nav h4{
     align-items: center;
     gap: 2vw;
     padding: 4vw 3vw;
-    background-color: rgba(14, 14, 14, 0.368);
+    background-color: rgba(5, 5, 5, 0.797);
     backdrop-filter: blur(100px);
     transform: translateX(100%);
     z-index: 99;
@@ -390,6 +390,7 @@ nav h4{
 }
 
 .about h4{
+    opacity: 0.8;
     line-height: 1.5vw;
     word-spacing: 2px;
     word-spacing: 2px;
@@ -717,7 +718,7 @@ footer .left-footer ,.right-footer{
 .edu-box h4{
     font-size: 1.1vw;
 }
-.clg-name{
+h4.clg-name{
     opacity: 0;
 }
 #hsc{

@@ -495,12 +495,12 @@ document.addEventListener("DOMContentLoaded", function () {
     tl2.to(".skill-container h2", {
       opacity: 1,
       y: -50
-    })
+    },"a")
     tl2.to(".sk1 ,.sk10", {
       opacity: 1,
       filter: "blur(0)"
 
-    })
+    },"a")
     tl2.to(".sk3 ,.sk4", {
       opacity: 1,
       filter: "blur(0)"
@@ -516,11 +516,11 @@ document.addEventListener("DOMContentLoaded", function () {
     tl2.to(".sk5 ,.sk11", {
       opacity: 1,
       filter: "blur(0)"
-    })
+    },"b")
     tl2.to(".sk6 ,.sk8", {
       opacity: 1,
       filter: "blur(0)"
-    })
+    },"b")
   }
 
   function educationAnimation() {
