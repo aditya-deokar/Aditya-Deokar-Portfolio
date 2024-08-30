@@ -553,7 +553,89 @@ form button:hover{
 
 
 
-/* end */
+/* page4 end */
+
+/* mini project page */
+.mini-project-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+
+  
+
+}
+.image-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2vw;
+    padding-top: 3vw;
+}
+.img-row{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2vw;
+    position: relative;
+}
+
+.mini-pro-title h1{
+    color: black;
+}
+.img-row-container{
+    width: 100%;
+    max-height:75vh;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-row-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all ease 0.1s;
+}
+
+.black-screen{
+    width: 100%;
+    height: 100%;
+    background-color: #1111111e;
+    position: absolute;
+    transition: all ease 0.4s;
+    z-index: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black-screen h2{
+    width: 90%;
+    font-weight: 500;
+    line-height: 2.5vw;
+    word-spacing: 5px;
+    font-size: 2.4vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.img-row-container:hover .black-screen{
+    background-color: black;
+}
+.img-row-container:hover .black-screen h2{
+    opacity: 1;
+}
+.img-row-container:hover img{
+    transform: scale(1.2);
+}
+
+/* end mini project page */
 
 footer{
     width: 100%;
