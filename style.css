@@ -126,7 +126,7 @@ nav h4{
     justify-content: flex-start;
     position: relative;
     padding: 1vw 3vw;
-    margin-top: 3vw;
+    margin-top: 10vw;
 }
 
 .p1body .heading{
@@ -558,11 +558,7 @@ form button:hover{
 /* mini project page */
 .mini-project-page{
     width: 100%;
-    min-height: 100vh;
     background-color: #fff;
-
-  
-
 }
 .image-container{
     width: 100%;
@@ -609,8 +605,36 @@ form button:hover{
     transition: all ease 0.4s;
     z-index: 8;
     display: flex;
+    flex-direction: column;
+    gap: 1vw;
     align-items: center;
     justify-content: center;
+}
+
+.black-screen .open-project{
+    color: #fcf9f99e;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 1.5vw;
+   
+}
+.black-screen .view-repo{
+    color: #fcf9f99e;
+    position: absolute;
+    bottom: 2vw;
+    right: 1%;
+    font-size: 1.5vw;
+    
+}
+
+.black-screen .project-name{
+    letter-spacing: 0.4vw;
+    width: 100%;
+    font-size: 1.4vw;
+    padding: 1vw 0;
+    text-align: center;
+    background-color: #111111ba;
 }
 .black-screen h2{
     width: 90%;
@@ -625,12 +649,24 @@ form button:hover{
     transition: all ease 0.5s;
 }
 
+.black-screen .pro-dest{
+    text-align: center;
+    opacity: 0;
+}
+.black-screen h2 span{
+    font-size: 1.2vw;
+    
+}
 .img-row-container:hover .black-screen{
     background-color: black;
 }
 .img-row-container:hover .black-screen h2{
     opacity: 1;
 }
+.img-row-container:hover .black-screen .pro-dest{
+    opacity: 1;
+}
+
 .img-row-container:hover img{
     transform: scale(1.2);
 }
