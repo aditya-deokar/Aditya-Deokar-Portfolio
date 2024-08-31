@@ -137,20 +137,14 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: Expo.easeInOut,
       stagger: 0.2
     }, "a")
-    tl.from(".p1bottom ,.arrows", {
+    tl.from(".p1bottom h4, .arrows , .links", {
       y: -20,
       opacity: 0,
       delay: -1,
       ease: Expo,
       stagger: 0.2
     })
-    tl.from(".links a", {
-      x: -50,
-      opacity: 0,
-      delay: -1,
-      ease: Expo,
-      stagger: 0.2
-    })
+  
 
 
     // &&&&&&&&&&&&&&&&&&&

@@ -22,10 +22,17 @@ html{
 a{
     color: white;
     text-decoration: none;
+    transition: all ease-in 0.3s;
+    z-index: 9;
+}
+a:hover{
+    color: rgb(114, 112, 112);
+    
 }
 h4{
     font-size: 1vw;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 ::selection{
@@ -176,11 +183,12 @@ nav h4{
     width: 100%;
     padding: 3vw 3vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 .links{
+    color: white;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -359,12 +367,19 @@ input ,textarea{
     color: #fff;
     font-size: 1vw;
 }
+textarea{
+    height: 20vh;
+}
 
 form button{
     padding: 1vw 1vw;
     background-color: transparent;
     font-size: 1.6vw;
     color: #fff;
+    border-radius: 1vw;
+
+    border: 1px solid white;
+   
 }
 form button:hover{
    color: #888; 
