@@ -526,7 +526,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".edu-box").forEach(function(elem){
         elem.addEventListener("mouseover",function(){
           gsap.to(elem,{
-            height:"20vh"
+            height:"22vh"
           })
           gsap.to(elem.querySelector(".clg-name"),{
             opacity:1
