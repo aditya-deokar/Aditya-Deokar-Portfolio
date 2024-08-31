@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a minimalistic and elegant portfolio website for a frontend developer, featuring a black and white theme. The website is designed to showcase your skills, education, and experience in a clean and professional manner. It includes sections for "About," "Skills," "Education," and "Contact," making it easy for visitors to learn more about you and get in touch.
+This is my minimalistic and elegant portfolio website, featuring a black and white theme. The website is designed to showcase my skills, education, and experience in a clean and professional manner. It includes sections for "About," "Skills," "Education," and "Contact," making it easy for visitors to learn more about me and get in touch.
 
 ## Table of Contents
 
