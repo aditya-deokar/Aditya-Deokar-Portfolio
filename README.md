@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a minimalistic and elegant portfolio website for a frontend developer, featuring a black and white theme. The website is designed to showcase your skills, education, and experience in a clean and professional manner. It includes sections for "About," "Skills," "Education," and "Contact," making it easy for visitors to learn more about you and get in touch.
+This is my minimalistic and elegant portfolio website, featuring a black and white theme. The website is designed to showcase my skills, education, and experience in a clean and professional manner. It includes sections for "About," "Skills," "Education," and "Contact," making it easy for visitors to learn more about me and get in touch.
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Check out the live demo of the portfolio [here](https://aditya-deokar.github.io/
 
 ## Features
 
-- **Black and White Theme**: A clean and professional look that puts focus on your content.
+- **Black and White Theme**: A clean and professional look.
 - **Responsive Design**: Works seamlessly on devices of all sizes.
 - **Smooth Scrolling**: Provides a seamless user experience.
 - **Interactive Animations**: Subtle animations to enhance user engagement.
@@ -36,4 +36,4 @@ Check out the live demo of the portfolio [here](https://aditya-deokar.github.io/
 For any inquiries, you can reach me at:
 
 - **Email**: [adityadeokar80@gmail.com](mailto:adityadeokar80@gmail.com)
-- **LinkedIn**: [Aditya Deokar](#)
+- **LinkedIn**: [Aditya Deokar](https://www.linkedin.com/in/aditya-deokar-4035b5221/)
