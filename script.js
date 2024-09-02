@@ -336,15 +336,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isMobile) {
       tl.to(".textContainer", { top: "10%" }, 'a');
-      tl.to("#page1", { top: "50%", width: "95%", height: "70vh", borderRadius: "30px" }, 'a');
-      tl.to("#page2", { top: "120%" }, 'a');
+      tl.to("#page1", {
+         top: "47%", 
+         width: "95%",
+          height: "70vh", 
+          borderRadius: "30px" 
 
-      tl.to("#page1", { width: "85%", height: "70vh" }, 'b');
-      tl.to("#page2", { top: "55%", borderRadius: "30px", width: "95%" }, 'b');
-      tl.to("#page3", { top: "140%" }, 'b');
+      }, 'a');
+      tl.to("#page2", {
+         top: "120%" 
 
-      tl.to("#page2", { width: "90%", height: "75vh" }, 'c');
-      tl.to("#page3", { top: "60%", borderRadius: "30px", width: "95%" }, 'c');
+      }, 'a');
+
+      tl.to("#page1", {
+         width: "85%", 
+         height: "70vh" 
+
+      }, 'b');
+      tl.to("#page2", {
+         top: "52%",
+        borderRadius: "30px",
+        width: "95%" 
+
+      }, 'b');
+      tl.to("#page3", {
+         top: "140%" 
+
+      }, 'b');
+
+      tl.to("#page2", {
+         width: "90%",
+          height: "70vh" 
+
+      }, 'c');
+      tl.to("#page3", {
+         top: "60%",
+          borderRadius: "30px",
+           width: "95%" 
+
+      }, 'c');
     } else {
       
       tl.to(".textContainer", {
@@ -514,77 +544,99 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function educationAnimation() {
-
-
+    var isMobile = window.innerWidth <= 768; 
+  
     document.querySelectorAll(".edu-box").forEach(function (elem) {
-      elem.addEventListener("mouseover", function () {
-        gsap.to(elem, {
-          height: "22vh"
-        })
-        gsap.to(elem.querySelector(".clg-name"), {
-          opacity: 1
-        }, "a")
-        gsap.to(elem.querySelector("i"), {
-          opacity: 0,
-        }, "a")
-
-      })
-      elem.addEventListener("mouseleave", function () {
-        gsap.to(elem, {
-          height: "14vh"
-        })
-        gsap.to(elem.querySelector(".clg-name"), {
-          opacity: 0
-        }, "a")
-        gsap.to(elem.querySelector("i"), {
-          opacity: 1
-        }, "a")
-
-      })
+      if (isMobile) {
+         elem.addEventListener("touchstart", function () {
+          gsap.to(elem, {
+            height: "22vh",
+          });
+          gsap.to(elem.querySelector(".clg-name"), {
+            opacity: 1,
+          }, "a");
+          gsap.to(elem.querySelector("i"), {
+            opacity: 0,
+          }, "a");
+        });
+  
+        elem.addEventListener("touchend", function () {
+          gsap.to(elem, {
+            height: "14vh",
+          });
+          gsap.to(elem.querySelector(".clg-name"), {
+            opacity: 0,
+          }, "a");
+          gsap.to(elem.querySelector("i"), {
+            opacity: 1,
+          }, "a");
+        });
+      } else {
+        elem.addEventListener("mouseover", function () {
+          gsap.to(elem, {
+            height: "22vh",
+          });
+          gsap.to(elem.querySelector(".clg-name"), {
+            opacity: 1,
+          }, "a");
+          gsap.to(elem.querySelector("i"), {
+            opacity: 0,
+          }, "a");
+        });
+  
+        elem.addEventListener("mouseleave", function () {
+          gsap.to(elem, {
+            height: "14vh",
+          });
+          gsap.to(elem.querySelector(".clg-name"), {
+            opacity: 0,
+          }, "a");
+          gsap.to(elem.querySelector("i"), {
+            opacity: 1,
+          }, "a");
+        });
+      }
     });
-
-
-
+  
+   
     var tlp6 = gsap.timeline({
       scrollTrigger: {
         scroller: "main",
         trigger: ".page6",
         start: "top 0%",
         end: "150% 90%",
-        // markers:true,
+        // markers:true, 
         scrub: 2,
         pin: true,
-      }
-    })
+      },
+    });
+  
     tlp6.to(".page6 h1", {
-      x: "-50%",
-    }, "a")
-
-
+      x: isMobile ? "-30%" : "-50%", 
+        }, "a");
+  
     var tl2p6 = gsap.timeline({
       scrollTrigger: {
         scroller: "main",
         trigger: ".page6",
         start: "top 0%",
         end: "100% 90%",
-        // markers:true,
-        scrub: 3
-
-      }
-    })
-
+        // markers:true, 
+        scrub: 3,
+      },
+    });
+  
     tl2p6.from("#hsc", {
       opacity: 0,
-    })
+    });
     tl2p6.from("#bca", {
       opacity: 0,
-    })
+    });
     tl2p6.from("#mca", {
       opacity: 0,
-    })
-
-
+    });
   }
+  
 
 
   mouseFollower();
