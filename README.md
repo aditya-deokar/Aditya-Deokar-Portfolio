@@ -13,7 +13,7 @@ This is my minimalistic and elegant portfolio website, featuring a black and whi
 
 ## Demo
 
-Check out the live demo of the portfolio [here](https://aditya-deokar.github.io/Aditya-s-Portfolio).
+Check out the live demo of the portfolio [here](https://aditya-deokar.github.io/Aditya-Deokar-Portfolio/).
 
 ## Features
 
