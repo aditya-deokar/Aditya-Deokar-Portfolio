@@ -37,7 +37,8 @@
     }
 
     .headingbase {
-        height: 16vh;
+        padding-right: 4vw;
+        height: 10vh;
         line-height: 3.5vw;
     }
 
@@ -75,11 +76,16 @@
     }
 
     .p1bottom {
+        
         align-items: flex-end;
     }
-
+    .p1bottom h4{
+        width: 80%;
+    }
     .links {
         width: 60%;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
 
@@ -156,9 +162,7 @@
         position: relative;
     }
 
-    .element .cont{
-        font-size: 7vw;
-    }
+  
     .element span img {
         width: 100%;
         height: fit-content;
@@ -167,6 +171,42 @@
         z-index: 9;
 
     }
+    .cont-elem{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+     /* form */
+
+     form {
+
+        padding: 3vw 0;
+        width: 95%;
+        height: fit-content;
+        gap: 1.6vw;
+
+        background-color: rgba(0, 0, 0, 0.845);
+        z-index: 99;
+    }
+
+    input,
+    textarea {
+        padding: 2.5vw 2.5vw;
+        border-radius: 1.5vw;
+        font-size: 3.9vw;
+    }
+
+    form button {
+        padding: 2vw 2vw;
+        font-size: 5vw;
+    }
+
+    form button:hover {
+        color: #888;
+    }
+
+    /* form end */
 
     /* page2 end */
 
@@ -329,7 +369,7 @@
 
     .page6 .edu-box {
         background-color: #3c3a3a6a;
-        min-width: 10vw;
+        width: 350px;
         height: fit-content;
         padding: 2vw 2.4vw;
         border-radius: 3vw;
@@ -365,18 +405,18 @@
 
     #hsc {
         top: 20%;
-        left: -55%;
+        left: -75%;
     }
 
     #bca {
 
-        top: 50%;
-        left: -110%;
+        top: 48%;
+        left: -70%;
     }
 
     #mca {
-        bottom: 22%;
-        left: -100%;
+        bottom: 19%;
+        left: -70%;
     }
 
 
@@ -385,35 +425,7 @@
     /* end page6 */
 
 
-    /* form */
-
-    form {
-
-        width: 70%;
-        height: fit-content;
-        gap: 1.6vw;
-
-        background-color: rgba(0, 0, 0, 0.845);
-        z-index: 99;
-    }
-
-    input,
-    textarea {
-        padding: 2.5vw 2.5vw;
-        border-radius: 1.5vw;
-        font-size: 3.9vw;
-    }
-
-    form button {
-        padding: 2vw 2vw;
-        font-size: 4.6vw;
-    }
-
-    form button:hover {
-        color: #888;
-    }
-
-    /* form end */
+   
     footer {
         flex-direction: column-reverse;
     }
