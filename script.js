@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: Expo,
       stagger: 0.2
     })
-  
+
 
 
     // &&&&&&&&&&&&&&&&&&&
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         gsap.to(elem.querySelector("span img"), {
           opacity: 1,
-          scale:1
+          scale: 1
         });
 
 
@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         gsap.to(elem.querySelector("span img"), {
           opacity: 0.3,
-          scale:0.9
+          scale: 0.9
         });
 
 
@@ -320,63 +320,62 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function page4Animation() {
+    var isMobile = window.innerWidth <= 768;
 
-
-    var tl = gsap.timeline(
-      {
-        scrollTrigger: {
-          trigger: ".page4",
-          scroller: "main",
-          // markers:true,
-          start: "40% 50%",
-          end: "100% 50%",
-          scrub: 2,
-          pin: true
-        }
+    var tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".page4",
+        scroller: "main",
+        // markers: true, 
+        start: "40% 50%",
+        end: "100% 50%",
+        scrub: 2,
+        pin: true
       }
-    );
+    });
 
-    tl.to(".textContainer", {
-      top: "5%"
-    }, 'a')
-    tl.to("#page1", {
-      top: "40%",
-      width: "90%",
-      height: "85vh",
-      borderRadius: "50px"
-    }, 'a')
-    tl.to("#page2", {
-      top: "110%"
-    }, 'a')
+    if (isMobile) {
+      tl.to(".textContainer", { top: "10%" }, 'a');
+      tl.to("#page1", { top: "50%", width: "95%", height: "70vh", borderRadius: "30px" }, 'a');
+      tl.to("#page2", { top: "120%" }, 'a');
 
+      tl.to("#page1", { width: "85%", height: "70vh" }, 'b');
+      tl.to("#page2", { top: "55%", borderRadius: "30px", width: "95%" }, 'b');
+      tl.to("#page3", { top: "140%" }, 'b');
 
-    tl.to("#page1", {
-      width: "76%",
-      height: "85vh",
+      tl.to("#page2", { width: "90%", height: "75vh" }, 'c');
+      tl.to("#page3", { top: "60%", borderRadius: "30px", width: "95%" }, 'c');
+    } else {
+      
+      tl.to(".textContainer", {
+         top: "5%" 
+        }, 'a');
+      tl.to("#page1", {
+         top: "40%", width: "90%", height: "85vh", borderRadius: "50px" 
+        }, 'a');
+      tl.to("#page2", {
+         top: "110%" 
+        }, 'a');
 
-    }, 'b')
-    tl.to("#page2", {
-      top: "45%",
-      borderRadius: "50px",
-      width: "90%",
-    }, 'b')
-    tl.to("#page3", {
-      top: "130%"
-    }, 'b')
+      tl.to("#page1", {
+         width: "76%", height: "85vh" 
+        }, 'b');
+      tl.to("#page2", {
+         top: "45%", borderRadius: "50px", width: "90%" 
+        }, 'b');
+      tl.to("#page3", {
+         top: "130%" 
+        }, 'b');
 
-    tl.to("#page2", {
-      width: "84%",
-      height: "86vh",
-    }, 'c')
-    tl.to("#page3", {
-      top: "50%",
-      borderRadius: "50px",
-      width: "90%",
-    }, 'c')
-
-
-
+      tl.to("#page2", {
+         width: "84%", height: "86vh" 
+        }, 'c');
+      tl.to("#page3", {
+         top: "50%", borderRadius: "50px", width: "90%" 
+        }, 'c');
+    }
   }
+
 
   function page3Animation() {
 
@@ -477,7 +476,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stagger: {
           amount: 0.1
         },
-       
+
         // pin: true
       }
 
@@ -486,12 +485,12 @@ document.addEventListener("DOMContentLoaded", function () {
     tl2.to(".skill-container h2", {
       opacity: 1,
       y: -50
-    },"a")
+    }, "a")
     tl2.to(".sk1 ,.sk10", {
       opacity: 1,
       filter: "blur(0)"
 
-    },"a")
+    }, "a")
     tl2.to(".sk3 ,.sk4", {
       opacity: 1,
       filter: "blur(0)"
@@ -507,41 +506,41 @@ document.addEventListener("DOMContentLoaded", function () {
     tl2.to(".sk5 ,.sk11", {
       opacity: 1,
       filter: "blur(0)"
-    },"b")
+    }, "b")
     tl2.to(".sk6 ,.sk8", {
       opacity: 1,
       filter: "blur(0)"
-    },"b")
+    }, "b")
   }
 
   function educationAnimation() {
 
-    
-    document.querySelectorAll(".edu-box").forEach(function(elem){
-        elem.addEventListener("mouseover",function(){
-          gsap.to(elem,{
-            height:"22vh"
-          })
-          gsap.to(elem.querySelector(".clg-name"),{
-            opacity:1
-          },"a")
-          gsap.to(elem.querySelector("i"),{
-            opacity:0,
-          },"a")
 
+    document.querySelectorAll(".edu-box").forEach(function (elem) {
+      elem.addEventListener("mouseover", function () {
+        gsap.to(elem, {
+          height: "22vh"
         })
-        elem.addEventListener("mouseleave",function(){
-          gsap.to(elem,{
-            height:"14vh"
-          })
-          gsap.to(elem.querySelector(".clg-name"),{
-            opacity:0
-          },"a")
-          gsap.to(elem.querySelector("i"),{
-            opacity:1
-          },"a")
+        gsap.to(elem.querySelector(".clg-name"), {
+          opacity: 1
+        }, "a")
+        gsap.to(elem.querySelector("i"), {
+          opacity: 0,
+        }, "a")
 
+      })
+      elem.addEventListener("mouseleave", function () {
+        gsap.to(elem, {
+          height: "14vh"
         })
+        gsap.to(elem.querySelector(".clg-name"), {
+          opacity: 0
+        }, "a")
+        gsap.to(elem.querySelector("i"), {
+          opacity: 1
+        }, "a")
+
+      })
     });
 
 
