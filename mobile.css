@@ -20,7 +20,11 @@
 
     /* page1  */
 
-
+    .circle{
+    
+       display: none;
+    
+    }
 
     .page1 {
         height: 80vh;
@@ -140,6 +144,30 @@
         padding: 4vw 4vw;
     }
 
+
+    .element h1 {
+        font-size: 10vw;
+        font-weight: 500;
+        opacity: 0.7;
+    }
+
+    .element span {
+        width: 3vw;
+        position: relative;
+    }
+
+    .element .cont{
+        font-size: 7vw;
+    }
+    .element span img {
+        width: 100%;
+        height: fit-content;
+        object-fit: cover;
+        opacity: 1;
+        z-index: 9;
+
+    }
+
     /* page2 end */
 
     /* page3 */
@@ -226,6 +254,76 @@
 
     /* page4 end */
 
+    /* mini project page */
+    .mini-project-page {
+        height: fit-content;
+
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-row {
+        width: 80%;
+        position: relative;
+    }
+
+    .mini-pro-title h1 {
+        font-size: 6vw;
+    }
+
+    .img-row-container {
+        height: fit-content;
+
+    }
+
+    .black-screen {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4vw;
+    }
+
+    .black-screen .open-project {
+        bottom: 1%;
+        right: 1%;
+        font-size: 6.5vw;
+    }
+
+    .black-screen .view-repo {
+
+        bottom: 9vw;
+        right: 1%;
+        font-size: 6.5vw;
+
+    }
+
+    .black-screen .project-name {
+        font-size: 6vw;
+    }
+
+    .black-screen h2 {
+        line-height: 6vw;
+        font-size: 6vw;
+        padding-top: 1vw;
+
+    }
+
+    .black-screen .pro-dest {
+        display: none;
+    }
+
+    .black-screen h2 span {
+        font-size: 4vw;
+        font-weight: 200;
+
+    }
+
+
+    /* end mini project page */
+
 
     /* page6 */
 
@@ -267,18 +365,18 @@
 
     #hsc {
         top: 20%;
-        left: -46%;
+        left: -55%;
     }
 
     #bca {
 
         top: 50%;
-        left: -97%;
+        left: -110%;
     }
 
     #mca {
         bottom: 22%;
-        left: -89%;
+        left: -100%;
     }
 
 
@@ -290,11 +388,11 @@
     /* form */
 
     form {
-       
+
         width: 70%;
         height: fit-content;
         gap: 1.6vw;
-       
+
         background-color: rgba(0, 0, 0, 0.845);
         z-index: 99;
     }
@@ -320,7 +418,10 @@
         flex-direction: column-reverse;
     }
 
-
+    footer .left-footer ,.right-footer{
+        display: flex;
+        gap: 4vw;
+    }
 
 
 }

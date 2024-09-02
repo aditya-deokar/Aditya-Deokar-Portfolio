@@ -46,8 +46,9 @@ h4{
     height: 1.4vw;
     border-radius: 50%;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.234);
+    /* background-color: rgba(255, 255, 255, 0.234); */
     /* backdrop-filter: blur(1px); */
+    background-color: white;
     z-index: 999;
     transform: translate(-50%,-50%);
     pointer-events: none;
@@ -261,8 +262,8 @@ nav h4{
     font-size: 7.7vw;
     line-height: 1;
     /* padding-left: 3vw; */
-    opacity: 0.5;
-    font-weight: 900;
+    /* opacity: 0.5; */
+    /* font-weight: 900; */
     
 }
 
@@ -435,9 +436,10 @@ form button:hover{
     align-items: flex-start; 
 }
 .about p{
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     font-weight: 400;
     margin-bottom: 2vw;
+    letter-spacing: 1px;
 }
 
 .about h4{
