@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //click event to each h1 in the left menu
-    document.querySelectorAll('.left-menu h1').forEach(function (heading) {
+    document.querySelectorAll('.left-menu h1 ,.logo').forEach(function (heading) {
       heading.addEventListener('click', function () {
         // Get the target section id from data attribute
         const targetId = heading.getAttribute('data-target');
