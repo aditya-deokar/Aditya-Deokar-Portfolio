@@ -182,7 +182,7 @@
      form {
 
         padding: 3vw 0;
-        width: 95%;
+        width: 100%;
         height: fit-content;
         gap: 1.6vw;
 
@@ -411,12 +411,12 @@
     #bca {
 
         top: 48%;
-        left: -70%;
+        left: -67%;
     }
 
     #mca {
         bottom: 19%;
-        left: -70%;
+        left: -67%;
     }
 
 

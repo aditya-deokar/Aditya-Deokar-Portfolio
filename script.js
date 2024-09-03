@@ -550,7 +550,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isMobile) {
          elem.addEventListener("touchstart", function () {
           gsap.to(elem, {
-            height: "14vh",
+            height: "15.5vh",
           });
           gsap.to(elem.querySelector(".clg-name"), {
             opacity: 1,
@@ -562,7 +562,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         elem.addEventListener("touchend", function () {
           gsap.to(elem, {
-            height: "12vh",
+            height: "13.5vh",
           });
           gsap.to(elem.querySelector(".clg-name"), {
             opacity: 0,
