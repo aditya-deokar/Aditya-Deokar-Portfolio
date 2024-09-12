@@ -252,6 +252,12 @@
 
 
     /* page5 */
+    .page5-skill{
+        display: none;
+    }
+    .center{
+        display: flex;
+    }
     .sk {
         padding: 2vw 3vw;
         font-size: 5vmin;
