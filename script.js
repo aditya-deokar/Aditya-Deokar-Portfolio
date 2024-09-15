@@ -124,7 +124,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function page1Animation() {
+
     var tl = gsap.timeline();
+    tl.from(".loadNo__p h4",{
+      opacity:0,
+      stagger:{
+        each:0.12,
+        repeat:1,
+        yoyo:true
+      },
+    
+      duration:0.18,
+      
+    })
+   
     tl.from("nav", {
       // duration:0.2,
       opacity: 0,

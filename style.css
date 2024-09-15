@@ -94,7 +94,35 @@ main{
 }
 
 
+/* loader */
 
+.loadNo{
+    padding: 1vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loadNo__p{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.loadNo__p h4{
+    font-size: 1.6vw;
+}
+
+.loadNo__p1{
+    width: 15%;
+}
+.loadNo__p2{
+    width: 30%;
+}
+.loadNo__p3{
+    width: 20%;
+}
+/* loader end */
 
 
 
@@ -140,7 +168,7 @@ nav h4{
     justify-content: flex-start;
     position: relative;
     padding: 1vw 3vw;
-    margin-top: 10vw;
+    margin-top: 5vw;
 }
 
 .p1body .heading{
@@ -464,20 +492,17 @@ form button:hover{
     margin: 2.5vw 0;
     border: 1px solid #dfdcdc;
     padding: 1vw 2vw;
-    transition: all ease-in 0.5s;
+    transition: all ease-in 0.1s;
     font-weight: 700;
 }
 .about .btn-con:hover{
     color: black;
-    background-color: #dfdcdc8f;
+    background-color: #5752528f;
     border: 1px solid black; 
     
 }
 .btn-con:hover a{
     color: black;
-    font-style: italic;
-    font-weight: 700;
-   
 }
 
 
