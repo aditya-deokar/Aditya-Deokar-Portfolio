@@ -375,7 +375,7 @@ nav h4{
     opacity: 0;
     pointer-events: none;
     height: 140%;
-    z-index: 999;
+    z-index: 99999;
     position: absolute;
     transform: translate(-50%, -50%);
 }
@@ -413,7 +413,7 @@ form button{
     color: #fff;
     border-radius: 1vw;
 
-    border: 1px solid white;
+    border: 1px solid #888;
    
 }
 form button:hover{
