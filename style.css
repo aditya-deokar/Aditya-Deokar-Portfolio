@@ -24,11 +24,12 @@ a{
     text-decoration: none;
     transition: all ease-in 0.3s;
     z-index: 9;
+    display: flex;
 }
-a:hover{
+/* a:hover{
     color: rgb(114, 112, 112);
     
-}
+} */
 h4{
     font-size: 1vw;
     font-weight: 500;
@@ -92,6 +93,8 @@ main{
     
    
 }
+
+
 
 
 /* loader */
@@ -492,21 +495,9 @@ form button:hover{
     margin: 2.5vw 0;
     border: 1px solid #dfdcdc;
     padding: 1vw 2vw;
-    transition: all ease-in 0.1s;
-    font-weight: 700;
-}
-.about .btn-con:hover{
-    color: black;
-    background-color: #5752528f;
-    border: 1px solid black; 
+   
     
 }
-.btn-con:hover a{
-    color: black;
-}
-
-
-
 
 /* page3 end */
 
@@ -1025,3 +1016,44 @@ h4.clg-name{
 }
 
 /* end page6 */
+
+
+
+/* button hover  */
+
+
+.frameFor h3{
+    font-weight: 600;
+    text-align: center;
+    font-size: 1vw;
+    height: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    /* background-color: aqua; */
+    padding: 0.4vw 0;
+}
+
+.frameFor h4{
+    text-align: center;
+    font-size: 1vw;
+    height: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    /* background-color: aqua; */
+    padding: 0.4vw 0;
+}
+.frameFor{
+    position: relative;
+    height: 1.2vw;
+    /* background-color: red; */
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* button hover end */
+
