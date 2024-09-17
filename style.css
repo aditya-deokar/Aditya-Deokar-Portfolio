@@ -316,6 +316,11 @@ nav h4{
     font-weight: 400;
     opacity: 0.4;
     cursor: pointer;
+    transition: all ease-in-out cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.right-menu h1:hover{
+    
+    color: wheat;
 }
 
 /* .logo img{
