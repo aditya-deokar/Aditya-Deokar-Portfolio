@@ -1,631 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
 
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-</head>
-
-<body>
-
+  <body>
     <div class="circle"></div>
 
     <div class="blackscreen"></div>
 
     <div class="menu">
+      <nav class="menunav">
+        <h4 class="logo" data-target="home">Aditya Deokar</h4>
+        <h4 class="close">close</h4>
+      </nav>
 
-        <nav class="menunav">
-            <h4 class="logo" data-target="home">Aditya Deokar</h4>
-            <h4 class="close">close</h4>
-        </nav>
-
-        <div class="left-menu">
-
-            <div class="bounding">
-                <h1 data-target="about">
-                    <div class="frame">
-                        <span class="boundElem ">About me</span>
-                        <span class="boundElem">About me</span>
-                    </div>
-                </h1>
+      <div class="left-menu">
+        <div class="bounding">
+          <h1 data-target="about">
+            <div class="frame">
+              <span class="boundElem">About me</span>
+              <span class="boundElem">About me</span>
             </div>
-
-            <div class="bounding">
-                <h1 data-target="skills">
-                    <div class="frame">
-                        <span class="boundElem ">skills</span>
-                        <span class="boundElem">skills</span>
-                    </div>
-                </h1>
-            </div>
-            <div class="bounding">
-                <h1 data-target="projects">
-                    <div class="frame">
-                        <span class="boundElem ">projects</span>
-                        <span class="boundElem">projects</span>
-                    </div>
-                </h1>
-            </div>
-
-            <div class="bounding">
-                <h1 data-target="education">
-                    <div class="frame">
-                        <span class="boundElem ">Education</span>
-                        <span class="boundElem">Education</span>
-                    </div>
-                </h1>
-            </div>
-
-
-
+          </h1>
         </div>
-        <div class="right-menu">
-            <h1>resume</h1>
-            <h1 data-target="contact">contact</h1>
+
+        <div class="bounding">
+          <h1 data-target="skills">
+            <div class="frame">
+              <span class="boundElem">skills</span>
+              <span class="boundElem">skills</span>
+            </div>
+          </h1>
         </div>
+        <div class="bounding">
+          <h1 data-target="projects">
+            <div class="frame">
+              <span class="boundElem">projects</span>
+              <span class="boundElem">projects</span>
+            </div>
+          </h1>
+        </div>
+
+        <div class="bounding">
+          <h1 data-target="education">
+            <div class="frame">
+              <span class="boundElem">Education</span>
+              <span class="boundElem">Education</span>
+            </div>
+          </h1>
+        </div>
+      </div>
+      <div class="right-menu">
+        <h1>resume</h1>
+        <h1 data-target="contact">contact</h1>
+      </div>
     </div>
 
-
-
-   
-
     <nav>
-        <h4 class="logo" data-target="home">Aditya Deokar</h4>
-        <h4 class="open">Menu+</h4>
+      <h4 class="logo" data-target="home">Aditya Deokar</h4>
+      <div class="frameFor open">
+        <h4 class="felem">menu+</h4>
+        <h4 class="felem">menu+</h4>
+      </div>
     </nav>
-
 
     <!-- <div class="loader">
        
     </div> -->
     <main>
-
-       
-
-        <div class="page1" id="home" data-scroll data-scroll-speed="3">
-
-           <!-- loader -->
-           <div class="loadNo">
-            <div class="loadNo__p1 loadNo__p">
-                <h4 class="Load">1</h4>
-                <h4 class="Load">2</h4>
-                <h4 class="Load">3</h4>
-                <h4 class="Load">4</h4>
-                <h4 class="Load">5</h4>
-            </div>
-            <div class="loadNo__p3 loadNo__p">
-                <h4 class="Load">32</h4>
-                <h4 class="Load">50</h4>
-                <h4 class="Load">64</h4>
-            </div>
-            <div class="loadNo__p3 loadNo__p">
-                <h4 class="Load">77</h4>
-                <h4 class="Load">82</h4>
-                <h4 class="Load">93</h4>
-                <h4 class="Load">97</h4>
-                <h4 class="Load">100</h4>
-            </div>
+      <div class="page1" id="home" data-scroll data-scroll-speed="3">
+        <!-- loader -->
+        <div class="loadNo">
+          <div class="loadNo__p1 loadNo__p">
+            <h4 class="Load">1</h4>
+            <h4 class="Load">2</h4>
+            <h4 class="Load">3</h4>
+            <h4 class="Load">4</h4>
+            <h4 class="Load">5</h4>
+          </div>
+          <div class="loadNo__p3 loadNo__p">
+            <h4 class="Load">32</h4>
+            <h4 class="Load">50</h4>
+            <h4 class="Load">64</h4>
+          </div>
+          <div class="loadNo__p3 loadNo__p">
+            <h4 class="Load">77</h4>
+            <h4 class="Load">82</h4>
+            <h4 class="Load">93</h4>
+            <h4 class="Load">97</h4>
+            <h4 class="Load">100</h4>
+          </div>
         </div>
-           <!-- loader end -->
+        <!-- loader end -->
 
-
-            <div class="p1body">
-
-                <!-- 
+        <div class="p1body">
+          <!-- 
                 <div class="frame">
                     <span>Contact</span>
                     <span>CONTACT</span>
                 </div> -->
 
-
-                <div class="heading" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">
-                    <div class="bounding">
-                        <h1>
-
-                            <div class="frame">
-                                <span class="boundElem ">frontend</span>
-                                <span class="boundElem">software</span>
-                            </div>
-
-                        </h1>
-                    </div>
-                    <div class="headingp2" data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal">
-                        <div class="bounding">
-                            <h1 class="boundElem">Devloper</h1>
-                        </div>
-                        <div class="bounding">
-                            <h4 class="boundElem">based in nasik,india</h4>
-                        </div>
-                    </div>
+          <div
+            class="heading"
+            data-scroll
+            data-scroll-speed="3"
+            data-scroll-direction="horizontal"
+          >
+            <div class="bounding">
+              <h1>
+                <div class="frame">
+                  <span class="boundElem">frontend</span>
+                  <span class="boundElem">software</span>
                 </div>
-                <div class="headingbase">
-                    <div class="bounding">
-                        <h4 class="boundElem">available for freelance</h4>
-                    </div>
-                    <div class="bounding">
-                        <h4 class="boundElem">work from aug24</h4>
-                    </div>
-                </div>
-
-
+              </h1>
             </div>
-            <div class="p1bottom">
-                <h4>currently pursuing mca at Sandip University</h4>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/aditya-deokar-4035b5221/">linkedin <i
-                            class="ri-arrow-right-up-line"></i></a>
-                    <a href="https://github.com/aditya-deokar">github <i class="ri-arrow-right-up-line"></i></a>
-                    <a href="#">leetcode <i class="ri-arrow-right-up-line"></i></a>
-                </div>
-
-
-
-                <div class="arrows">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#888">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                            d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12V8H11V12H8L12 16L16 12H13Z">
-                        </path>
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#888">
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                            d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12V8H11V12H8L12 16L16 12H13Z">
-                        </path>
-                    </svg>
-                </div>
+            <div
+              class="headingp2"
+              data-scroll
+              data-scroll-speed="-5"
+              data-scroll-direction="horizontal"
+            >
+              <div class="bounding">
+                <h1 class="boundElem">Devloper</h1>
+              </div>
+              <div class="bounding">
+                <h4 class="boundElem">based in nasik,india</h4>
+              </div>
             </div>
+          </div>
+          <div class="headingbase">
+            <div class="bounding">
+              <h4 class="boundElem">available for freelance</h4>
+            </div>
+            <div class="bounding">
+              <h4 class="boundElem">work from aug24</h4>
+            </div>
+          </div>
         </div>
-
-
-
-
-        <!-- page3 -->
-        <div id="about" class="page3" data-scroll data-scroll-speed="0.1">
-
-            <div class="about" id="about">
-                <p data-scroll data-scroll-speed="1">#aboutme</p>
-                <div class="aboutText" data-scroll data-scroll-speed="3">
-                    <h4>I'm a Creative frontend developer specializing in crafting visually stunning,</h4>
-                    <h4> user-friendly websites with smooth, engaging animations. </h4>
-                    <h4> Skilled in HTML, CSS, JavaScript, libraries like React, gsap</h4>
-                    <h4>and modern frameworks like tailwind css</h4>
-                    <h4>I bring designs to life with an eye for detail,</h4>
-                    <h4>seamless user experiences, and dynamic, interactive elements. </h4>
-                    <br><br>
-                    <h4> Let's create something amazing together.</h4>
-
-                </div>
-                <div class="btn-con">
-                    <a href="#" data-scroll data-scroll-speed="1">Check out my resume</a>
-                </div>
-
-
-
-            </div>
-
-            <div class="imgcontainer">
-                <img data-scroll data-scroll-speed="-1.5"
-                    src="https://raw.githubusercontent.com/aditya-deokar/Aditya-s-Portfolio/master/1720242686155.jpg"
-                    alt="profile image">
-                <h2 class="Nametitle" data-scroll data-scroll-speed="1">Aditya Deokar</h2>
-            </div>
-
-
-        </div>
-        <!-- page3 end -->
-
-
-
-
-
-        <!-- skill page5 -->
-        <div id="skills" class="page5">
-
-            <div class="top">
-                <h1 id="top-h1">SKILLS</h1>
-            </div>
-            <div class="title-p5">
-                <h2>technical skills</h2>
-            </div>
-
-            <div class="bottum">
-                <h1 id="bottum-h1">SKILLS</h1>
-            </div>
-
-
-        </div>
-          <!-- page5 -->
-          <section class="page5-skill" >
-            <div class="marque">
-                <h1>java - <span>JavaScript</span> - css -</h1>
-                <h1>java - <span>JavaScript</span> - css -</h1>
-                
-                  
-            </div>
-            <div class="marque marque2">
-                <h1>git - <span>react</span> - tailwind css -</h1>
-                <h1>git - <span>react</span> - tailwind css -</h1>
-                
-            </div>
-            <div class="marque">
-                <h1><span>mongodb</span> - mysql - nodejs -</h1>
-                <h1><span>mongodb</span> - mysql - nodejs -</h1>
-               
-            </div>
-            <div class="marque marque2">
-                <h1><span>github</span> - vscode - gsap -</h1>
-                <h1><span>github</span> - vscode - html -</h1>
-               
-            </div>
-          
-
-         </section>
-         <!-- page5-skill end -->
-
-         <div class="center" data-scroll data-scroll-speed="-1">
-
-
-
-            <div class="switch-skill-body">
-
-                <h2>technical skill -</h2>
-                <div class="skill-container">
-                    <div class="skill-row">
-                        <h4 class="sk sk1">java</h4>
-                        <h4 class="sk sk2">javascript</h4>
-                        <h4 class="sk sk3">html</h4>
-                    </div>
-                    <div class="skill-row">
-                        <h4 class="sk sk4">css</h4>
-                        <h4 class="sk sk5">react</h4>
-                        <h4 class="sk sk6">mysql</h4>
-                        <h4 class="sk sk7">mongodb</h4>
-                        <h4 class="sk sk8">taiwind</h4>
-                    </div>
-                    <div class="skill-row">
-                        <h4 class="sk sk9">git</h4>
-                        <h4 class="sk sk10">jsp</h4>
-                        <h4 class="sk sk11">node.js</h4>
-                        <h4 class="sk sk12">gsap</h4>
-                    </div>
-                </div>
-
-
-                <h2 data-scroll data-scroll-speed="-1">tools and platforms -</h2>
-                <div class="skill-container" data-scroll data-scroll-speed="-2">
-                    <div class="skill-row">
-                        <h4 class="sk sk1">git</h4>
-                        <h4 class="sk sk2">vs code</h4>
-                        <h4 class="sk sk3">github</h4>
-                    </div>
-                    <div class="skill-row">
-                        <h4 class="sk sk4">netbeans</h4>
-                        <h4 class="sk sk5">canva</h4>
-                        <h4 class="sk sk6">figma</h4>
-                        <h4 class="sk sk7">lightroom</h4>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <!-- skill page  end-->
-
-
-
-        <!-- page4 project -->
-        <div id="projects" class="page4">
-
-            <div class="textContainer" data-scroll data-scroll-speed="-3">
-                <h1>Projects</h1>
-                <p>visually stunning and Creative modern websites</p>
-            </div>
-            <div class="pages" id="page1">
-                <div class="pages-body">
-                    <img src="https://plus.unsplash.com/premium_photo-1683984171269-04c84ee23234?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="">
-                    <div class="pro-bottom">
-                        <h1 class="project-name">SaiVijay Art</h1>
-                        <h4 class="open-project">open project</h4>
-                    </div>
-                </div>
-
-            </div>
-            <div class="pages" id="page2">
-                <div class="pages-body">
-                    <img src="https://images.unsplash.com/photo-1723924995430-b74c76bbcdfd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="">
-                    <div class="pro-bottom">
-                        <h1 class="project-name">Untitle project</h1>
-                        <h4 class="open-project">open project</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="pages" id="page3">
-                <div class="pages-body">
-                    <img src="https://images.unsplash.com/photo-1708162664628-6913e8797929?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="">
-                    <div class="pro-bottom">
-                        <h1 class="project-name">comming soon</h1>
-                        <h4 class="open-project">open project</h4>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- page4 end -->
-
-        <!-- mini project  -->
-        <div class="mini-project-page" data-scroll data-scroll-speed="-2">
-
-            <div class="image-container">
-
-                <div class="img-row">
-
-                    <div class="mini-pro-title">
-                        <h1>frontend Projects</h1>
-                    </div>
-
-                    <div class="img-row-container" data-scroll data-scroll-speed="1.2">
-                        <div class="black-screen">
-                            <h2>
-                                technologies
-                                <br>
-                                <span>html</span>
-                                <span>tailwind</span>
-                                <span>react</span>
-                            </h2>
-
-                            <h1 class="project-name" data-scroll data-scroll-speed="2">SaiVijay Art</h1>
-
-                            <span class="pro-dest">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-                                rem.</span>
-                            <a href="#" class="open-project">open project <i class="ri-pages-fill"></i>
-                            </a>
-                            <a href="#" class="view-repo">view repository <i class="ri-github-fill"></i>
-                            </a>
-
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1721777426117-9d528a3f3fd0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="">
-                    </div>
-
-
-
-
-                </div>
-                <div class="img-row">
-                    <div class="img-row-container" data-scroll data-scroll-speed="-0.2">
-                        <div class="black-screen">
-                            <h2>
-                                technologies
-                                <br>
-                                <span>html</span>
-                                <span>tailwind</span>
-                                <span>react</span>
-                            </h2>
-
-                            <h1 class="project-name" data-scroll data-scroll-speed="2">SaiVijay Art</h1>
-
-                            <span class="pro-dest">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-                                rem.</span>
-                            <h4 class="open-project">open project <i class="ri-pages-fill"></i>
-                            </h4>
-                            <h4 class="view-repo">view repository <i class="ri-github-fill"></i>
-                            </h4>
-
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1721778775422-8cf9894040a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="">
-                    </div>
-                    <div class="img-row-container" data-scroll data-scroll-speed="1">
-                        <div class="black-screen">
-                            <h2>
-                                technologies
-                                <br>
-                                <span>html</span>
-                                <span>tailwind</span>
-                                <span>react</span>
-                            </h2>
-
-                            <h1 class="project-name" data-scroll data-scroll-speed="2">SaiVijay Art</h1>
-
-                            <span class="pro-dest">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-                                rem.</span>
-                            <h4 class="open-project">open project <i class="ri-pages-fill"></i>
-                            </h4>
-                            <h4 class="view-repo">view repository <i class="ri-github-fill"></i>
-                            </h4>
-
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1721818545065-8ee6562a0545?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="">
-                    </div>
-
-                </div>
-                <div class="img-row">
-                    <div class="img-row-container" data-scroll data-scroll-speed="1">
-                        <div class="black-screen">
-                            <h2>
-                                technologies
-                                <br>
-                                <span>html</span>
-                                <span>tailwind</span>
-                                <span>react</span>
-                            </h2>
-
-                            <h1 class="project-name" data-scroll data-scroll-speed="2">SaiVijay Art</h1>
-
-                            <span class="pro-dest">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-                                rem.</span>
-                            <h4 class="open-project">open project <i class="ri-pages-fill"></i>
-                            </h4>
-                            <h4 class="view-repo">view repository <i class="ri-github-fill"></i>
-                            </h4>
-
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1721417264661-ba808eb29956?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="">
-                    </div>
-                    <div class="img-row-container" data-scroll data-scroll-speed="2">
-                        <div class="black-screen">
-                            <h2>
-                                technologies
-                                <br>
-                                <span>html</span>
-                                <span>tailwind</span>
-                                <span>react</span>
-                            </h2>
-
-                            <h1 class="project-name" data-scroll data-scroll-speed="1">SaiVijay Art</h1>
-
-                            <span class="pro-dest">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-                                rem.</span>
-                            <h4 class="open-project">open project <i class="ri-pages-fill"></i>
-                            </h4>
-                            <h4 class="view-repo">view repository <i class="ri-github-fill"></i>
-                            </h4>
-
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1721657459654-9acf4d6d8211?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="">
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-        <!-- end mini project  -->
-
-
-
-        <!-- page6 education -->
-        <div class="page6" id="education" data-scroll>
-            <h1>Education</h1>
-            <div class="edu-box" id="hsc" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal">
-                <h4>12th-science(hsc)</h4>
-                <span>(2019-2021)</span>
-                <div class="box-body">
-                    <span>percentage-90%</span>
-                    <i class="ri-scroll-to-bottom-fill"></i>
-                </div>
-                <h4 class="clg-name">shree sai baba juniour collage,shirdi</h4>
-
-            </div>
-            <div class="edu-box" id="bca" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal">
-                <h4>bachelor of computer application</h4>
-                <span>(2021-2024)</span>
-                <div class="box-body">
-                    <span>cgpa-8.60</span>
-                    <i class="ri-scroll-to-bottom-fill"></i>
-                </div>
-                <h4 class="clg-name">K.j somaiya collage,kopergaon</h4>
-
-            </div>
-            <div class="edu-box" id="mca" data-scroll data-scroll-speed="3">
-                <h4>master of computer application</h4>
-                <span>(2024-2026)</span>
-                <div class="box-body">
-                    <span>pursuing</span>
-                    <i class="ri-scroll-to-bottom-fill"></i>
-                </div>
-                <h4 class="clg-name">Sandip University</h4>
-
-            </div>
-        </div>
-
-        <!-- end page6 -->
-
-
-        <!-- page2 contact -->
-        <div class="page2" data-scroll data-scroll-speed="-0.5">
-
-            <a href="https://www.linkedin.com/in/aditya-deokar-4035b5221/" target="_blank" class="element">
-                <img src="img/linkedInProfile.png"
-                    alt="">
-                <h1>linkedin</h1>
-                <span><img src="img/linkedin (1).png" alt=""></span>
+        <div class="p1bottom">
+          <h4>currently pursuing mca at Sandip University</h4>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/aditya-deokar-4035b5221/">
+              <div class="frameFor">
+                <h4 class="felem">linkedin</h4>
+                <h4 class="felem">linkedin</h4>
+              </div>
+              <i class="ri-arrow-right-up-line"></i>
             </a>
-            <a href="https://github.com/aditya-deokar" class="element">
-                <img src="img/githubProfile.png"
-                    alt="">
-                <h1>github</h1>
-                <span><img src="img/github (2).png" alt=""></span>
+            <a href="https://github.com/aditya-deokar"
+              ><div class="frameFor">
+                <h4 class="felem">github</h4>
+                <h4 class="felem">github</h4>
+              </div>
+              <i class="ri-arrow-right-up-line"></i
+            ></a>
+            <a href="#">
+              <div class="frameFor">
+                <h4 class="felem">leetcode</h4>
+                <h4 class="felem">leetcode</h4>
+              </div>
+              <i class="ri-arrow-right-up-line"></i>
             </a>
-            <!-- <a href="#" class="element">
+          </div>
+
+          <div class="arrows">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="#888"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12V8H11V12H8L12 16L16 12H13Z"
+              ></path>
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="#888"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM13 12V8H11V12H8L12 16L16 12H13Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- page3 -->
+      <div id="about" class="page3" data-scroll data-scroll-speed="0.1">
+        <div class="about" id="about">
+          <p data-scroll data-scroll-speed="1">#aboutme</p>
+          <div class="aboutText" data-scroll data-scroll-speed="1">
+            <h4>
+              I'm a Creative frontend developer specializing in crafting
+              visually stunning,
+            </h4>
+            <h4>user-friendly websites with smooth, engaging animations.</h4>
+            <h4>
+              Skilled in HTML, CSS, JavaScript, libraries like React, gsap
+            </h4>
+            <h4>and modern frameworks like tailwind css</h4>
+            <h4>I bring designs to life with an eye for detail,</h4>
+            <h4>
+              seamless user experiences, and dynamic, interactive elements.
+            </h4>
+            <br /><br />
+            <h4>Let's create something amazing together.</h4>
+          </div>
+          <div class="btn-con">
+            <a href="#" 
+              >
+              <div class="frameFor">
+                <h3 class="felem">check out my resume</h3>
+                <h3 class="felem">check out my resume</h3>
+              </div>
+              </a
+            >
+          </div>
+        </div>
+
+        <div class="imgcontainer">
+          <img
+            data-scroll
+            data-scroll-speed="-1.5"
+            src="https://raw.githubusercontent.com/aditya-deokar/Aditya-s-Portfolio/master/1720242686155.jpg"
+            alt="profile image"
+          />
+          <h2 class="Nametitle" data-scroll data-scroll-speed="1">
+            Aditya Deokar
+          </h2>
+        </div>
+      </div>
+      <!-- page3 end -->
+
+      <!-- skill page5 -->
+      <div id="skills" class="page5">
+        <div class="top">
+          <h1 id="top-h1">SKILLS</h1>
+        </div>
+        <div class="title-p5">
+          <h2>technical skills</h2>
+        </div>
+
+        <div class="bottum">
+          <h1 id="bottum-h1">SKILLS</h1>
+        </div>
+      </div>
+      <!-- page5 -->
+      <section class="page5-skill">
+        <div class="marque">
+          <h1>java - <span>JavaScript</span> - css -</h1>
+          <h1>java - <span>JavaScript</span> - css -</h1>
+        </div>
+        <div class="marque marque2">
+          <h1>git - <span>react</span> - tailwind css -</h1>
+          <h1>git - <span>react</span> - tailwind css -</h1>
+        </div>
+        <div class="marque">
+          <h1><span>mongodb</span> - mysql - nodejs -</h1>
+          <h1><span>mongodb</span> - mysql - nodejs -</h1>
+        </div>
+        <div class="marque marque2">
+          <h1><span>github</span> - vscode - gsap -</h1>
+          <h1><span>github</span> - vscode - html -</h1>
+        </div>
+      </section>
+      <!-- page5-skill end -->
+
+      <div class="center" data-scroll data-scroll-speed="-1">
+        <div class="switch-skill-body">
+          <h2>technical skill -</h2>
+          <div class="skill-container">
+            <div class="skill-row">
+              <h4 class="sk sk1">java</h4>
+              <h4 class="sk sk2">javascript</h4>
+              <h4 class="sk sk3">html</h4>
+            </div>
+            <div class="skill-row">
+              <h4 class="sk sk4">css</h4>
+              <h4 class="sk sk5">react</h4>
+              <h4 class="sk sk6">mysql</h4>
+              <h4 class="sk sk7">mongodb</h4>
+              <h4 class="sk sk8">taiwind</h4>
+            </div>
+            <div class="skill-row">
+              <h4 class="sk sk9">git</h4>
+              <h4 class="sk sk10">jsp</h4>
+              <h4 class="sk sk11">node.js</h4>
+              <h4 class="sk sk12">gsap</h4>
+            </div>
+          </div>
+
+          <h2 data-scroll data-scroll-speed="-1">tools and platforms -</h2>
+          <div class="skill-container" data-scroll data-scroll-speed="-2">
+            <div class="skill-row">
+              <h4 class="sk sk1">git</h4>
+              <h4 class="sk sk2">vs code</h4>
+              <h4 class="sk sk3">github</h4>
+            </div>
+            <div class="skill-row">
+              <h4 class="sk sk4">netbeans</h4>
+              <h4 class="sk sk5">canva</h4>
+              <h4 class="sk sk6">figma</h4>
+              <h4 class="sk sk7">lightroom</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- skill page  end-->
+
+      <!-- page4 project -->
+      <div id="projects" class="page4">
+        <div class="textContainer" data-scroll data-scroll-speed="-3">
+          <h1>Projects</h1>
+          <p>visually stunning and Creative modern websites</p>
+        </div>
+        <div class="pages" id="page1">
+          <div class="pages-body">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1683984171269-04c84ee23234?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div class="pro-bottom">
+              <h1 class="project-name">SaiVijay Art</h1>
+              <h4 class="open-project">open project</h4>
+            </div>
+          </div>
+        </div>
+        <div class="pages" id="page2">
+          <div class="pages-body">
+            <img
+              src="https://images.unsplash.com/photo-1723924995430-b74c76bbcdfd?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div class="pro-bottom">
+              <h1 class="project-name">Untitle project</h1>
+              <h4 class="open-project">open project</h4>
+            </div>
+          </div>
+        </div>
+        <div class="pages" id="page3">
+          <div class="pages-body">
+            <img
+              src="https://images.unsplash.com/photo-1708162664628-6913e8797929?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+            <div class="pro-bottom">
+              <h1 class="project-name">comming soon</h1>
+              <h4 class="open-project">open project</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- page4 end -->
+
+      <!-- mini project  -->
+      <div class="mini-project-page" data-scroll data-scroll-speed="-2">
+        <div class="image-container">
+          <div class="img-row">
+            <div class="mini-pro-title">
+              <h1>frontend Projects</h1>
+            </div>
+
+            <div class="img-row-container" data-scroll data-scroll-speed="1.2">
+              <div class="black-screen">
+                <h2>
+                  technologies
+                  <br />
+                  <span>html</span>
+                  <span>tailwind</span>
+                  <span>react</span>
+                </h2>
+
+                <h1 class="project-name" data-scroll data-scroll-speed="2">
+                  SaiVijay Art
+                </h1>
+
+                <span class="pro-dest"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit, rem.</span
+                >
+                <a href="#" class="open-project"
+                  >open project <i class="ri-pages-fill"></i>
+                </a>
+                <a href="#" class="view-repo"
+                  >view repository <i class="ri-github-fill"></i>
+                </a>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1721777426117-9d528a3f3fd0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="img-row">
+            <div class="img-row-container" data-scroll data-scroll-speed="-0.2">
+              <div class="black-screen">
+                <h2>
+                  technologies
+                  <br />
+                  <span>html</span>
+                  <span>tailwind</span>
+                  <span>react</span>
+                </h2>
+
+                <h1 class="project-name" data-scroll data-scroll-speed="2">
+                  SaiVijay Art
+                </h1>
+
+                <span class="pro-dest"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit, rem.</span
+                >
+                <h4 class="open-project">
+                  open project <i class="ri-pages-fill"></i>
+                </h4>
+                <h4 class="view-repo">
+                  view repository <i class="ri-github-fill"></i>
+                </h4>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1721778775422-8cf9894040a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="img-row-container" data-scroll data-scroll-speed="1">
+              <div class="black-screen">
+                <h2>
+                  technologies
+                  <br />
+                  <span>html</span>
+                  <span>tailwind</span>
+                  <span>react</span>
+                </h2>
+
+                <h1 class="project-name" data-scroll data-scroll-speed="2">
+                  SaiVijay Art
+                </h1>
+
+                <span class="pro-dest"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit, rem.</span
+                >
+                <h4 class="open-project">
+                  open project <i class="ri-pages-fill"></i>
+                </h4>
+                <h4 class="view-repo">
+                  view repository <i class="ri-github-fill"></i>
+                </h4>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1721818545065-8ee6562a0545?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="img-row">
+            <div class="img-row-container" data-scroll data-scroll-speed="1">
+              <div class="black-screen">
+                <h2>
+                  technologies
+                  <br />
+                  <span>html</span>
+                  <span>tailwind</span>
+                  <span>react</span>
+                </h2>
+
+                <h1 class="project-name" data-scroll data-scroll-speed="2">
+                  SaiVijay Art
+                </h1>
+
+                <span class="pro-dest"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit, rem.</span
+                >
+                <h4 class="open-project">
+                  open project <i class="ri-pages-fill"></i>
+                </h4>
+                <h4 class="view-repo">
+                  view repository <i class="ri-github-fill"></i>
+                </h4>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1721417264661-ba808eb29956?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="img-row-container" data-scroll data-scroll-speed="2">
+              <div class="black-screen">
+                <h2>
+                  technologies
+                  <br />
+                  <span>html</span>
+                  <span>tailwind</span>
+                  <span>react</span>
+                </h2>
+
+                <h1 class="project-name" data-scroll data-scroll-speed="1">
+                  SaiVijay Art
+                </h1>
+
+                <span class="pro-dest"
+                  >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Velit, rem.</span
+                >
+                <h4 class="open-project">
+                  open project <i class="ri-pages-fill"></i>
+                </h4>
+                <h4 class="view-repo">
+                  view repository <i class="ri-github-fill"></i>
+                </h4>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1721657459654-9acf4d6d8211?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end mini project  -->
+
+      <!-- page6 education -->
+      <div class="page6" id="education" data-scroll>
+        <h1>Education</h1>
+        <div
+          class="edu-box"
+          id="hsc"
+          data-scroll
+          data-scroll-speed="-3"
+          data-scroll-direction="horizontal"
+        >
+          <h4>12th-science(hsc)</h4>
+          <span>(2019-2021)</span>
+          <div class="box-body">
+            <span>percentage-90%</span>
+            <i class="ri-scroll-to-bottom-fill"></i>
+          </div>
+          <h4 class="clg-name">shree sai baba juniour collage,shirdi</h4>
+        </div>
+        <div
+          class="edu-box"
+          id="bca"
+          data-scroll
+          data-scroll-speed="3"
+          data-scroll-direction="horizontal"
+        >
+          <h4>bachelor of computer application</h4>
+          <span>(2021-2024)</span>
+          <div class="box-body">
+            <span>cgpa-8.60</span>
+            <i class="ri-scroll-to-bottom-fill"></i>
+          </div>
+          <h4 class="clg-name">K.j somaiya collage,kopergaon</h4>
+        </div>
+        <div class="edu-box" id="mca" data-scroll data-scroll-speed="3">
+          <h4>master of computer application</h4>
+          <span>(2024-2026)</span>
+          <div class="box-body">
+            <span>pursuing</span>
+            <i class="ri-scroll-to-bottom-fill"></i>
+          </div>
+          <h4 class="clg-name">Sandip University</h4>
+        </div>
+      </div>
+
+      <!-- end page6 -->
+
+      <!-- page2 contact -->
+      <div class="page2" data-scroll data-scroll-speed="-0.5">
+        <a
+          href="https://www.linkedin.com/in/aditya-deokar-4035b5221/"
+          target="_blank"
+          class="element"
+        >
+          <img src="img/linkedInProfile.png" alt="" />
+          <h1>linkedin</h1>
+          <span><img src="img/linkedin (1).png" alt="" /></span>
+        </a>
+        <a href="https://github.com/aditya-deokar" class="element">
+          <img src="img/githubProfile.png" alt="" />
+          <h1>github</h1>
+          <span><img src="img/github (2).png" alt="" /></span>
+        </a>
+        <!-- <a href="#" class="element">
                 <img src="https://images.unsplash.com/photo-1721417264661-ba808eb29956?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="">
                 <h1>leetcode</h1>
                 <span><img src="img/programming-code-signs.png" alt=""></span>
             </a> -->
 
+        <div class="element cont-elem" id="contact">
+          <h1 class="cont">contact Me</h1>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="2cca033d-b928-4892-b322-1b24f6cf96ec"
+            />
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Your Name"
+              required
+            />
 
-            <div class="element cont-elem" id="contact">
-                <h1 class="cont">contact Me</h1>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="2cca033d-b928-4892-b322-1b24f6cf96ec">
-                    <input type="text" name="username" id="username" placeholder="Your Name" required>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="@email.com"
+              required
+            />
 
-                    <input type="email" name="email" id="email" placeholder="@email.com" required>
+            <textarea
+              name="message"
+              id="message"
+              required
+              placeholder="Please enter your massage here.."
+            ></textarea>
 
-                    <textarea name="message" id="message" required
-                        placeholder="Please enter your massage here.."></textarea>
-
-                    <button type="submit">send</button>
-                </form>
-
-            </div>
+            <button type="submit">send</button>
+          </form>
         </div>
-        <!-- page2 end -->
+      </div>
+      <!-- page2 end -->
 
-        <footer>
+      <footer>
+        <div class="left-footer">
+          <h4>2024 &copy;</h4>
+          <h4 id="currentTime"></h4>
+        </div>
 
-            <div class="left-footer">
-                <h4>2024 &copy;</h4>
-                <h4 id="currentTime"></h4>
-            </div>
-
-            <div class="right-footer">
-                <a href="#">instagram</a>
-                <a href="https://www.linkedin.com/in/aditya-deokar-4035b5221/">linkedin</a>
-                <a href="#">twitter</a>
-            </div>
-
-        </footer>
-
-
+        <div class="right-footer">
+          <a href="#">instagram</a>
+          <a href="https://www.linkedin.com/in/aditya-deokar-4035b5221/"
+            >linkedin</a
+          >
+          <a href="#">twitter</a>
+        </div>
+      </footer>
     </main>
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
