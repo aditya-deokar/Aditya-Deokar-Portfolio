@@ -26,6 +26,12 @@
 
     }
 
+    .loadNo__p h4{
+        font-size: 1.6vmax;
+    }
+    .loadNo__p3{
+        width: 30%;
+    }
     .page1 {
         height: 80vh;
         justify-content: center;
@@ -95,6 +101,9 @@
         display: none;
     }
 
+    .headingbase{
+        display: none;
+    }
     /* page1 end */
 
 
@@ -307,7 +316,8 @@
 
     /* mini project page */
     .mini-project-page {
-        height: fit-content;
+        /* height: fit-content; */
+        gap: 4vw;
 
     }
 
@@ -322,7 +332,11 @@
     }
 
     .mini-pro-title h1 {
-        font-size: 6vw;
+        font-size: 8vw;
+        margin: 3vmax 0;
+    }
+    .container {
+        gap: 6vw;
     }
 
     .img-row-container {
@@ -378,14 +392,24 @@
 
     /* page6 */
 
+
+    .page6{
+        align-items: flex-start;
+    }
+    .page6 h1{
+        padding-top: 4vmax;
+        font-size: 15vw;
+        
+    }
     .page6 .edu-box {
         background-color: #3c3a3a6a;
-        width: 350px;
+        min-width: 100vw;
         height: fit-content;
-        padding: 2vw 2.4vw;
+        padding: 2.4vw 2.8vw;
         border-radius: 3vw;
-
-        gap: 0.5vw;
+        position: relative;
+        gap: 1vw;
+        transform: translate(0%, 0%);
 
 
     }
@@ -406,28 +430,33 @@
     }
 
     .edu-box h4 {
-        font-size: 5vw;
+        font-size: 3vmax;
     }
 
     h4.clg-name {
-        font-size: 3vw;
+        font-size: 1.5vmax;
         opacity: 1;
     }
 
     #hsc {
-        top: 20%;
-        left: -75%;
+        margin: 3vw;
+        top: 25%;
+        position: absolute;
+        left: 0;
     }
 
     #bca {
-
-        top: 48%;
-        left: -67%;
+        margin: 3vw;
+        top: 42%;
+        position: absolute;
+        left: 0;
     }
 
     #mca {
-        bottom: 19%;
-        left: -67%;
+        margin: 3vw;
+        top: 65%;
+        position: absolute;
+        left: 0;
     }
 
 

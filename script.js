@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var isMobile = window.innerWidth <= 768;
+
   function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -91,24 +93,24 @@ document.addEventListener("DOMContentLoaded", function () {
       frame.addEventListener("mousemove", function (dets) {
         gsap.to(circle, {
           scale: 8,
-          borderRadius:"0px",
-          width:"6.5vw",
+          borderRadius: "0px",
+          width: "6.5vw",
           duration: 0.3,
           // delay: -1,
           ease: Power3,
           mixBlendMode: "difference",
         });
-      
-        gsap.to(frame,{
-          cursor:"none",
-        })
+
+        gsap.to(frame, {
+          cursor: "none",
+        });
       });
 
       frame.addEventListener("mouseleave", function () {
         gsap.to(circle, {
           scale: 1,
-          width:"1.4vw",
-          borderRadius:"50%",
+          width: "1.4vw",
+          borderRadius: "50%",
         });
       });
     });
@@ -604,49 +606,32 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function educationAnimation() {
-    var isMobile = window.innerWidth <= 768;
-
     document.querySelectorAll(".edu-box").forEach(function (elem) {
       if (isMobile) {
-        elem.addEventListener("touchstart", function () {
-          gsap.to(elem, {
-            height: "15.5vh",
-          });
-          gsap.to(
-            elem.querySelector(".clg-name"),
-            {
-              opacity: 1,
-            },
-            "a"
-          );
-          gsap.to(
-            elem.querySelector("i"),
-            {
-              opacity: 0,
-            },
-            "a"
-          );
+        var tl1 = gsap.timeline({
+          scrollTrigger: {
+            scroller: "main",
+            trigger: ".page6",
+            start: "10 20%",
+            end: "50% 50%",
+            // markers:true,
+            scrub: 2,
+          },
         });
 
-        elem.addEventListener("touchend", function () {
-          gsap.to(elem, {
-            height: "13.5vh",
-          });
-          gsap.to(
-            elem.querySelector(".clg-name"),
-            {
-              opacity: 0,
-            },
-            "a"
-          );
-          gsap.to(
-            elem.querySelector("i"),
-            {
-              opacity: 1,
-            },
-            "a"
-          );
+        tl1.from("#hsc", {
+          opacity: 0,
+          x:200,
         });
+        tl1.from("#bca", {
+          opacity: 0,
+          x:200,
+        });
+        tl1.from("#mca", {
+          opacity: 0,
+          x:200,
+        });
+
       } else {
         elem.addEventListener("mouseover", function () {
           gsap.to(elem, {
@@ -687,53 +672,63 @@ document.addEventListener("DOMContentLoaded", function () {
             "a"
           );
         });
+
+        var tlp6 = gsap.timeline({
+          scrollTrigger: {
+            scroller: "main",
+            trigger: ".page6",
+            start: "top 0%",
+            end: "150% 90%",
+            // markers:true,
+            scrub: 2,
+            pin: true,
+          },
+        });
+    
+        tlp6.to(
+          ".page6 h1",
+          {
+            x: isMobile ? "0%" : "-50%",
+          },
+          "a"
+        );
+    
+        var tl2p6 = gsap.timeline({
+          scrollTrigger: {
+            scroller: "main",
+            trigger: ".page6",
+            start: "top 0%",
+            end: "100% 90%",
+            // markers:true,
+            scrub: 3,
+          },
+        });
+        tl2p6.to(
+          "nav",
+          {
+            display: "none",
+          },
+          "a"
+        );
+    
+        tl2p6.from("#hsc", {
+          opacity: 0,
+          
+        });
+        tl2p6.from("#bca", {
+          opacity: 0,
+         
+        });
+        tl2p6.from("#mca", {
+          opacity: 0,
+         
+        });
+
+
       }
     });
 
-    var tlp6 = gsap.timeline({
-      scrollTrigger: {
-        scroller: "main",
-        trigger: ".page6",
-        start: "top 0%",
-        end: "150% 90%",
-        // markers:true,
-        scrub: 2,
-        pin: true,
-      },
-    });
-    
-
-    tlp6.to(
-      ".page6 h1",
-      {
-        x: isMobile ? "-30%" : "-50%",
-      },
-      "a"
-    );
-
-    var tl2p6 = gsap.timeline({
-      scrollTrigger: {
-        scroller: "main",
-        trigger: ".page6",
-        start: "top 0%",
-        end: "100% 90%",
-        // markers:true,
-        scrub: 3,
-      },
-    });
-    tl2p6.to("nav",{
-      display:"none",
-    },"a")
-
-    tl2p6.from("#hsc", {
-      opacity: 0,
-    });
-    tl2p6.from("#bca", {
-      opacity: 0,
-    });
-    tl2p6.from("#mca", {
-      opacity: 0,
-    });
+   
   }
 
   function BreakSpan() {
@@ -769,29 +764,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-function textAnimation(){
-  
-var frames = document.querySelectorAll(".frameFor");
+  function textAnimation() {
+    var frames = document.querySelectorAll(".frameFor");
 
-frames.forEach(function (frame) {
-  frame.addEventListener("mouseenter", function (dets) {
-    
-    gsap.to(frame.querySelectorAll(".e"), {
-      y: "-1.2vw",
-      stagger:0.021,
+    frames.forEach(function (frame) {
+      frame.addEventListener("mouseenter", function (dets) {
+        gsap.to(frame.querySelectorAll(".e"), {
+          y: "-1.2vw",
+          stagger: 0.021,
+        });
+      });
+      frame.addEventListener("mouseleave", function () {
+        gsap.to(frame.querySelectorAll(".e"), {
+          y: "0vw",
+          stagger: 0.019,
+        });
+      });
     });
-   
-  });
-  frame.addEventListener("mouseleave", function () {
-    gsap.to(frame.querySelectorAll(".e"), {
-      y: "0vw",
-      stagger:0.019,
-    });
-  
-  });
-});
-
-}
+  }
   mouseFollower();
   displayTime();
 
@@ -804,6 +794,10 @@ frames.forEach(function (frame) {
   page4Animation();
   page2Animation();
   educationAnimation();
-  BreakSpan();
-  textAnimation();
+
+  if (!isMobile) {
+   
+    BreakSpan();
+    textAnimation();
+  }
 });
