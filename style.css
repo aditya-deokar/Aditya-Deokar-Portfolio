@@ -15,7 +15,6 @@ html{
     height: 100%;
     color: white;
     text-transform: uppercase;
-    
     /* cursor: none; */
     /* background-color: black; */
     
@@ -54,7 +53,6 @@ h4{
     z-index: 999;
     transform: translate(-50%,-50%);
     pointer-events: none;
-   
     mix-blend-mode: difference;
 
 }
@@ -185,7 +183,7 @@ nav h4{
   
 }
 .heading h1{
-    /* cursor: pointer; */
+    cursor: pointer;
     font-size: 9vw;
     line-height: 1;
     /* padding-left: 3vw; */
@@ -301,6 +299,7 @@ nav h4{
 }
 
 .left-menu h1 .boundElem{
+    /* width: 95%; */
     border-bottom: 1px solid #888;
     border-top: 1px solid #888;
 }

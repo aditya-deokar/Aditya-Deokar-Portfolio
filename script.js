@@ -81,34 +81,26 @@ document.addEventListener("DOMContentLoaded", function () {
         left: dets.clientX,
         top: dets.clientY,
         ease: Power1,
-        duration: 0.3,
+        duration: 0.5,
       });
     });
 
     // for frame
-    var frames = document.querySelectorAll(".title1");
+    var frames = document.querySelectorAll(".frame");
     frames.forEach(function (frame) {
       frame.addEventListener("mousemove", function (dets) {
         gsap.to(circle, {
-          scale: 8,
-          borderRadius:"0px",
-          width:"6.5vw",
-          duration: 0.3,
-          // delay: -1,
-          ease: Power3,
+          scale: 12,
+          duration: 0.5,
+          delay: -1,
+          ease: Power1,
           mixBlendMode: "difference",
         });
-      
-        gsap.to(frame,{
-          cursor:"none",
-        })
       });
 
       frame.addEventListener("mouseleave", function () {
         gsap.to(circle, {
           scale: 1,
-          width:"1.4vw",
-          borderRadius:"50%",
         });
       });
     });
@@ -684,7 +676,6 @@ document.addEventListener("DOMContentLoaded", function () {
         pin: true,
       },
     });
-    
 
     tlp6.to(
       ".page6 h1",
@@ -704,9 +695,6 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: 3,
       },
     });
-    tl2p6.to("nav",{
-      display:"none",
-    },"a")
 
     tl2p6.from("#hsc", {
       opacity: 0,

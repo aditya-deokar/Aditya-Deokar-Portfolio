@@ -20,10 +20,10 @@
 
     /* page1  */
 
-    .circle {
-
-        display: none;
-
+    .circle{
+    
+       display: none;
+    
     }
 
     .loadNo__p h4{
@@ -82,14 +82,12 @@
     }
 
     .p1bottom {
-
+        
         align-items: flex-end;
     }
-
-    .p1bottom h4 {
+    .p1bottom h4{
         width: 80%;
     }
-
     .links {
         width: 60%;
         flex-direction: column;
@@ -173,7 +171,7 @@
         position: relative;
     }
 
-
+  
     .element span img {
         width: 100%;
         height: fit-content;
@@ -182,16 +180,15 @@
         z-index: 9;
 
     }
-
-    .cont-elem {
+    .cont-elem{
         flex-direction: column;
         align-items: flex-start;
     }
 
 
-    /* form */
+     /* form */
 
-    form {
+     form {
 
         padding: 3vw 0;
         width: 100%;
@@ -264,14 +261,12 @@
 
 
     /* page5 */
-    .page5-skill {
+    .page5-skill{
         display: none;
     }
-
-    .center {
+    .center{
         display: flex;
     }
-
     .sk {
         padding: 2vw 3vw;
         font-size: 5vmin;
@@ -465,41 +460,14 @@
     /* end page6 */
 
 
-
+   
     footer {
         flex-direction: column-reverse;
     }
 
-    footer .left-footer,
-    .right-footer {
+    footer .left-footer ,.right-footer{
         display: flex;
         gap: 4vw;
-    }
-
-
-
-
-    /* button hover  */
-
-    .frameFor h4 , .frameFor h3 {
-        font-size: 1.8vmax;
-        height: 2vmax;
-        padding: 1vmax 1vw;
-    }
-
-    .frameFor {
-        height: 2vmax;
-    }
-
-    .about .btn-con{
-        margin-top: 5vmax;
-       padding: 2vmax;
-    }
-    /* button hover end */
-
-
-    .page4{
-        display: none;
     }
 
 
