@@ -81,26 +81,34 @@ document.addEventListener("DOMContentLoaded", function () {
         left: dets.clientX,
         top: dets.clientY,
         ease: Power1,
-        duration: 0.5,
+        duration: 0.3,
       });
     });
 
     // for frame
-    var frames = document.querySelectorAll(".frame");
+    var frames = document.querySelectorAll(".title1");
     frames.forEach(function (frame) {
       frame.addEventListener("mousemove", function (dets) {
         gsap.to(circle, {
-          scale: 12,
-          duration: 0.5,
-          delay: -1,
-          ease: Power1,
+          scale: 8,
+          borderRadius:"0px",
+          width:"6.5vw",
+          duration: 0.3,
+          // delay: -1,
+          ease: Power3,
           mixBlendMode: "difference",
         });
+      
+        gsap.to(frame,{
+          cursor:"none",
+        })
       });
 
       frame.addEventListener("mouseleave", function () {
         gsap.to(circle, {
           scale: 1,
+          width:"1.4vw",
+          borderRadius:"50%",
         });
       });
     });
@@ -600,30 +608,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.querySelectorAll(".edu-box").forEach(function (elem) {
       if (isMobile) {
-        var tl1 = gsap.timeline({
-          scrollTrigger: {
-            scroller: "main",
-            trigger: ".page6",
-            start: "10 20%",
-            end: "50% 50%",
-            // markers:true,
-            scrub: 2,
-          },
+        elem.addEventListener("touchstart", function () {
+          gsap.to(elem, {
+            height: "15.5vh",
+          });
+          gsap.to(
+            elem.querySelector(".clg-name"),
+            {
+              opacity: 1,
+            },
+            "a"
+          );
+          gsap.to(
+            elem.querySelector("i"),
+            {
+              opacity: 0,
+            },
+            "a"
+          );
         });
 
-        tl1.from("#hsc", {
-          opacity: 0,
-          x:200,
+        elem.addEventListener("touchend", function () {
+          gsap.to(elem, {
+            height: "13.5vh",
+          });
+          gsap.to(
+            elem.querySelector(".clg-name"),
+            {
+              opacity: 0,
+            },
+            "a"
+          );
+          gsap.to(
+            elem.querySelector("i"),
+            {
+              opacity: 1,
+            },
+            "a"
+          );
         });
-        tl1.from("#bca", {
-          opacity: 0,
-          x:200,
-        });
-        tl1.from("#mca", {
-          opacity: 0,
-          x:200,
-        });
-
       } else {
         elem.addEventListener("mouseover", function () {
           gsap.to(elem, {
@@ -664,6 +687,8 @@ document.addEventListener("DOMContentLoaded", function () {
             "a"
           );
         });
+      }
+    });
 
     var tlp6 = gsap.timeline({
       scrollTrigger: {
@@ -676,6 +701,7 @@ document.addEventListener("DOMContentLoaded", function () {
         pin: true,
       },
     });
+    
 
     tlp6.to(
       ".page6 h1",
@@ -695,6 +721,9 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: 3,
       },
     });
+    tl2p6.to("nav",{
+      display:"none",
+    },"a")
 
     tl2p6.from("#hsc", {
       opacity: 0,
@@ -705,8 +734,6 @@ document.addEventListener("DOMContentLoaded", function () {
     tl2p6.from("#mca", {
       opacity: 0,
     });
-
-   
   }
 
   function BreakSpan() {

@@ -20,18 +20,12 @@
 
     /* page1  */
 
-    .circle{
-    
-       display: none;
-    
+    .circle {
+
+        display: none;
+
     }
 
-    .loadNo__p h4{
-        font-size: 1.6vmax;
-    }
-    .loadNo__p3{
-        width: 30%;
-    }
     .page1 {
         height: 80vh;
         justify-content: center;
@@ -82,12 +76,14 @@
     }
 
     .p1bottom {
-        
+
         align-items: flex-end;
     }
-    .p1bottom h4{
+
+    .p1bottom h4 {
         width: 80%;
     }
+
     .links {
         width: 60%;
         flex-direction: column;
@@ -99,9 +95,6 @@
         display: none;
     }
 
-    .headingbase{
-        display: none;
-    }
     /* page1 end */
 
 
@@ -171,7 +164,7 @@
         position: relative;
     }
 
-  
+
     .element span img {
         width: 100%;
         height: fit-content;
@@ -180,15 +173,16 @@
         z-index: 9;
 
     }
-    .cont-elem{
+
+    .cont-elem {
         flex-direction: column;
         align-items: flex-start;
     }
 
 
-     /* form */
+    /* form */
 
-     form {
+    form {
 
         padding: 3vw 0;
         width: 100%;
@@ -261,12 +255,14 @@
 
 
     /* page5 */
-    .page5-skill{
+    .page5-skill {
         display: none;
     }
-    .center{
+
+    .center {
         display: flex;
     }
+
     .sk {
         padding: 2vw 3vw;
         font-size: 5vmin;
@@ -311,8 +307,7 @@
 
     /* mini project page */
     .mini-project-page {
-        /* height: fit-content; */
-        gap: 4vw;
+        height: fit-content;
 
     }
 
@@ -327,11 +322,7 @@
     }
 
     .mini-pro-title h1 {
-        font-size: 8vw;
-        margin: 3vmax 0;
-    }
-    .container {
-        gap: 6vw;
+        font-size: 6vw;
     }
 
     .img-row-container {
@@ -387,24 +378,14 @@
 
     /* page6 */
 
-
-    .page6{
-        align-items: flex-start;
-    }
-    .page6 h1{
-        padding-top: 4vmax;
-        font-size: 15vw;
-        
-    }
     .page6 .edu-box {
         background-color: #3c3a3a6a;
-        min-width: 100vw;
+        width: 350px;
         height: fit-content;
-        padding: 2.4vw 2.8vw;
+        padding: 2vw 2.4vw;
         border-radius: 3vw;
-        position: relative;
-        gap: 1vw;
-        transform: translate(0%, 0%);
+
+        gap: 0.5vw;
 
 
     }
@@ -425,33 +406,28 @@
     }
 
     .edu-box h4 {
-        font-size: 3vmax;
+        font-size: 5vw;
     }
 
     h4.clg-name {
-        font-size: 1.5vmax;
+        font-size: 3vw;
         opacity: 1;
     }
 
     #hsc {
-        margin: 3vw;
-        top: 25%;
-        position: absolute;
-        left: 0;
+        top: 20%;
+        left: -75%;
     }
 
     #bca {
-        margin: 3vw;
-        top: 42%;
-        position: absolute;
-        left: 0;
+
+        top: 48%;
+        left: -67%;
     }
 
     #mca {
-        margin: 3vw;
-        top: 65%;
-        position: absolute;
-        left: 0;
+        bottom: 19%;
+        left: -67%;
     }
 
 
@@ -460,14 +436,41 @@
     /* end page6 */
 
 
-   
+
     footer {
         flex-direction: column-reverse;
     }
 
-    footer .left-footer ,.right-footer{
+    footer .left-footer,
+    .right-footer {
         display: flex;
         gap: 4vw;
+    }
+
+
+
+
+    /* button hover  */
+
+    .frameFor h4 , .frameFor h3 {
+        font-size: 1.8vmax;
+        height: 2vmax;
+        padding: 1vmax 1vw;
+    }
+
+    .frameFor {
+        height: 2vmax;
+    }
+
+    .about .btn-con{
+        margin-top: 5vmax;
+       padding: 2vmax;
+    }
+    /* button hover end */
+
+
+    .page4{
+        display: none;
     }
 
 
