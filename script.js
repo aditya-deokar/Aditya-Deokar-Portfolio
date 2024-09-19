@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var isMobile = window.innerWidth <= 768;
+
   function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -91,24 +93,24 @@ document.addEventListener("DOMContentLoaded", function () {
       frame.addEventListener("mousemove", function (dets) {
         gsap.to(circle, {
           scale: 8,
-          borderRadius:"0px",
-          width:"6.5vw",
+          borderRadius: "0px",
+          width: "6.5vw",
           duration: 0.3,
           // delay: -1,
           ease: Power3,
           mixBlendMode: "difference",
         });
-      
-        gsap.to(frame,{
-          cursor:"none",
-        })
+
+        gsap.to(frame, {
+          cursor: "none",
+        });
       });
 
       frame.addEventListener("mouseleave", function () {
         gsap.to(circle, {
           scale: 1,
-          width:"1.4vw",
-          borderRadius:"50%",
+          width: "1.4vw",
+          borderRadius: "50%",
         });
       });
     });
@@ -604,8 +606,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function educationAnimation() {
-    var isMobile = window.innerWidth <= 768;
-
     document.querySelectorAll(".edu-box").forEach(function (elem) {
       if (isMobile) {
         elem.addEventListener("touchstart", function () {
@@ -701,7 +701,6 @@ document.addEventListener("DOMContentLoaded", function () {
         pin: true,
       },
     });
-    
 
     tlp6.to(
       ".page6 h1",
@@ -721,9 +720,13 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: 3,
       },
     });
-    tl2p6.to("nav",{
-      display:"none",
-    },"a")
+    tl2p6.to(
+      "nav",
+      {
+        display: "none",
+      },
+      "a"
+    );
 
     tl2p6.from("#hsc", {
       opacity: 0,
@@ -769,29 +772,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-function textAnimation(){
-  
-var frames = document.querySelectorAll(".frameFor");
+  function textAnimation() {
+    var frames = document.querySelectorAll(".frameFor");
 
-frames.forEach(function (frame) {
-  frame.addEventListener("mouseenter", function (dets) {
-    
-    gsap.to(frame.querySelectorAll(".e"), {
-      y: "-1.2vw",
-      stagger:0.021,
+    frames.forEach(function (frame) {
+      frame.addEventListener("mouseenter", function (dets) {
+        gsap.to(frame.querySelectorAll(".e"), {
+          y: "-1.2vw",
+          stagger: 0.021,
+        });
+      });
+      frame.addEventListener("mouseleave", function () {
+        gsap.to(frame.querySelectorAll(".e"), {
+          y: "0vw",
+          stagger: 0.019,
+        });
+      });
     });
-   
-  });
-  frame.addEventListener("mouseleave", function () {
-    gsap.to(frame.querySelectorAll(".e"), {
-      y: "0vw",
-      stagger:0.019,
-    });
-  
-  });
-});
-
-}
+  }
   mouseFollower();
   displayTime();
 
@@ -804,6 +802,9 @@ frames.forEach(function (frame) {
   page4Animation();
   page2Animation();
   educationAnimation();
-  BreakSpan();
-  textAnimation();
+
+  if (!isMobile) {
+    BreakSpan();
+    textAnimation();
+  }
 });
