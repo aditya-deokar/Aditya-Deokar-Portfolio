@@ -609,7 +609,7 @@ form button:hover{
 /* mini project page */
 .mini-project-page{
     width: 100%;
-    /* height: 140vh; */
+    height: 140vh;
     background-color: #dfdcdc;
 }
 .image-container{
