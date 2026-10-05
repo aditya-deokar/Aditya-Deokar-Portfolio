@@ -4,7 +4,7 @@
 
 ### *Creative Frontend Developer · Based in Nasik, India*
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-000000?style=for-the-badge&logo=github)](https://aditya-deokar.github.io/Aditya-Deokar-Portfolio/)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-000000?style=for-the-badge&logo=github)](https://portfolio.aditya-deokar.me)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-deokar-4035b5221/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aditya-deokar)
 
@@ -106,7 +106,19 @@ cd Aditya-Deokar-Portfolio
 open index.html
 ```
 
-Or simply visit the **[live site →](https://aditya-deokar.github.io/Aditya-Deokar-Portfolio/)**
+Or simply visit the **[live site →](https://portfolio.aditya-deokar.me)**
+
+## 🌍 Custom Domain Setup (GitHub Pages)
+
+To run this portfolio on a subdomain:
+
+1. Add a DNS `CNAME` record:
+   - **Host/Name:** `portfolio`
+   - **Target/Value:** `aditya-deokar.github.io`
+2. In this repository, open **Settings → Pages** and set:
+   - **Source:** deployment branch (usually `main` / root)
+   - **Custom domain:** `portfolio.aditya-deokar.me`
+3. Enable **Enforce HTTPS** after the certificate is provisioned.
 
 ---
 
@@ -128,7 +140,7 @@ Have a project in mind or just want to say hi? I'm open to freelance work and co
 
 <div align="center">
 
-**Made with ❤️ by [Aditya Deokar](https://aditya-deokar.github.io/Aditya-Deokar-Portfolio/)**
+**Made with ❤️ by [Aditya Deokar](https://portfolio.aditya-deokar.me)**
 
 *⭐ If you like this project, consider giving it a star!*
 
