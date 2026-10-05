@@ -4,7 +4,7 @@
 
 ### *Creative Frontend Developer · Based in Nasik, India*
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-000000?style=for-the-badge&logo=github)](https://aditya-deokar.github.io/Aditya-Deokar-Portfolio/)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Visit%20Now-000000?style=for-the-badge&logo=github)](https://portfolio-v1.aditya-deokar.me/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aditya-deokar-4035b5221/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aditya-deokar)
 
